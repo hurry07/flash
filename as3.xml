@@ -1,0 +1,32 @@
+<!--import fl.motion.Animator;-->
+<!--var aaa_xml:XML = -->
+<Motion duration="11" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+    <source>
+        <Source frameRate="24" x="112.05" y="206.9" scaleX="1" scaleY="1" rotation="-6.8" elementType="graphic"
+                symbolName="部件/元件 12">
+            <dimensions>
+                <geom:Rectangle left="0" top="0" width="87" height="59"/>
+            </dimensions>
+            <transformationPoint>
+                <geom:Point x="0.10287356321839079" y="0.2796610169491525"/>
+            </transformationPoint>
+        </Source>
+    </source>
+
+    <Keyframe index="0" tweenSnap="true" tweenSync="true">
+        <tweens>
+            <SimpleEase ease="0"/>
+        </tweens>
+    </Keyframe>
+
+    <Keyframe index="10" tweenSnap="true" tweenSync="true" firstFrame="10" x="14.950000000000003" y="-63"
+              rotation="-45">
+        <tweens>
+            <SimpleEase ease="0"/>
+        </tweens>
+    </Keyframe>
+</Motion>
+        <!--;-->
+
+        <!--var aaa_animator:Animator = new Animator(aaa_xml, aaa);-->
+        <!--aaa_animator.play();-->

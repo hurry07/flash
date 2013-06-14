@@ -682,7 +682,6 @@ FlaToXML.prototype.convertImage = function( image) {
 	var docName = fl.getDocumentDOM().name.replace(".fla", "");
 	xml_img.setAttribute( UIControlAttribute.kImage, docName + ".png" );
 	
-	
 	var imgRect = this.getPackImgRect(image.libraryItem);
 	
 	if(imgRect) {
