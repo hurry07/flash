@@ -1,5 +1,29 @@
 <flash>
-    <timeline>
+    <timeline index="0">
+        <layer name="图层 1">
+            <library>
+                <item name="部件/元件 21" />
+                <item name="部件/元件 22" />
+                <item name="部件/元件 23" />
+                <item name="部件/元件 24" />
+                <item name="部件/元件 25" />
+                <item name="部件/元件 26" />
+                <item name="部件/元件 27" />
+                <item name="部件/元件 28" />
+            </library>
+            <frames>
+                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="0" duration="3" />
+                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="3" duration="3" />
+                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="6" duration="3" />
+                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="9" duration="3" />
+                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="12" duration="3" />
+                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="15" duration="3" />
+                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="18" duration="3" />
+                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="21" duration="3" />
+            </frames>
+        </layer>
+    </timeline>
+    <timeline index="1">
         <layer name="action">
             <library>
             </library>
@@ -17,14 +41,14 @@
                 <item name="部件/元件 11" />
             </library>
             <frames>
-                <frame x="126.05" y="208.55" scalex="1" scaley="1" centerx="17" centery="13.5" width="99" height="63" rotation="0" />
-                <frame x="139.6" y="131.1" scalex="0.9994659423828125" scaley="0.999481201171875" centerx="17.1" centery="13.6" width="116.1" height="98.05" rotation="-0.4234601901857934" />
-                <frame x="145.6" y="105.1" scalex="0.998260498046875" scaley="0.998260498046875" centerx="17.2" centery="13.5" width="112.8" height="115.55" rotation="-0.8395972200060869" />
-                <frame x="145.6" y="105.1" scalex="0.998260498046875" scaley="0.998260498046875" centerx="17.2" centery="13.5" width="112.8" height="115.55" rotation="-0.8395972200060869" />
-                <frame x="96.6" y="228.1" scalex="0.998260498046875" scaley="0.998260498046875" centerx="17.1" centery="13.6" width="112.8" height="115.55" rotation="-0.8395972200060869" />
-                <frame x="99.1" y="244.6" scalex="0.9976806640625" scaley="0.9976806640625" centerx="17.15" centery="13.55" width="106.4" height="75.7" rotation="-0.13635571202482002" />
-                <frame x="99.1" y="248.6" scalex="0.9982452392578125" scaley="0.998260498046875" centerx="17.1" centery="13.55" width="113.5" height="90.5" rotation="-0.3159947159822619" />
-                <frame x="126.05" y="208.55" scalex="1" scaley="1" centerx="17" centery="13.5" width="99" height="63" rotation="0" />
+                <frame x="126.05" y="208.55" scalex="1" scaley="1" centerx="17" centery="13.5" rotation="0" start="0" duration="10" />
+                <frame x="139.6" y="131.1" scalex="0.9994659423828125" scaley="0.999481201171875" centerx="17.1" centery="13.6" rotation="-0.4234601901857934" start="10" duration="4" />
+                <frame x="145.6" y="105.1" scalex="0.998260498046875" scaley="0.998260498046875" centerx="17.2" centery="13.5" rotation="-0.8395972200060869" start="14" duration="2" />
+                <frame x="145.6" y="105.1" scalex="0.998260498046875" scaley="0.998260498046875" centerx="17.2" centery="13.5" rotation="-0.8395972200060869" start="16" duration="3" />
+                <frame x="96.6" y="228.1" scalex="0.998260498046875" scaley="0.998260498046875" centerx="17.1" centery="13.6" rotation="-0.8395972200060869" start="19" duration="3" />
+                <frame x="99.1" y="244.6" scalex="0.9976806640625" scaley="0.9976806640625" centerx="17.15" centery="13.55" rotation="-0.13635571202482002" start="22" duration="4" />
+                <frame x="99.1" y="248.6" scalex="0.9982452392578125" scaley="0.998260498046875" centerx="17.1" centery="13.55" rotation="-0.3159947159822619" start="26" duration="13" />
+                <frame x="126.05" y="208.55" scalex="1" scaley="1" centerx="17" centery="13.5" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_head1">
@@ -32,14 +56,14 @@
                 <item name="部件/元件 16" />
             </library>
             <frames>
-                <frame x="146.05" y="222.9" scalex="1" scaley="1" centerx="80.5" centery="62.5" width="108" height="97" rotation="0" />
-                <frame x="162.25" y="154.6" scalex="0.9996795654296875" scaley="0.9996795654296875" centerx="80.5" centery="62.45" width="134.9" height="128.35" rotation="0.3538520835099563" />
-                <frame x="177.25" y="121.55" scalex="0.9997100830078125" scaley="0.9997100830078125" centerx="80.35" centery="62.4" width="116.4" height="106.45" rotation="0.09203964622146549" />
-                <frame x="177.25" y="121.55" scalex="0.9997100830078125" scaley="0.9997100830078125" centerx="80.35" centery="62.4" width="116.4" height="106.45" rotation="0.09203964622146549" />
-                <frame x="123.3" y="259.6" scalex="0.9997100830078125" scaley="0.9997100830078125" centerx="80.45" centery="62.5" width="144.15" height="141.5" rotation="0.6156429491936175" />
-                <frame x="123.3" y="264.9" scalex="0.9983062744140625" scaley="0.998321533203125" centerx="80.45" centery="62.4" width="127.85" height="119.8" rotation="0.24114044827507775" />
-                <frame x="123.25" y="272.1" scalex="0.999725341796875" scaley="0.9997100830078125" centerx="80.45" centery="62.45" width="134.9" height="128.35" rotation="0.3538385013883969" />
-                <frame x="146.05" y="222.9" scalex="1" scaley="1" centerx="80.5" centery="62.5" width="108" height="97" rotation="0" />
+                <frame x="146.05" y="222.9" scalex="1" scaley="1" centerx="80.5" centery="62.5" rotation="0" start="0" duration="10" />
+                <frame x="162.25" y="154.6" scalex="0.9996795654296875" scaley="0.9996795654296875" centerx="80.5" centery="62.45" rotation="0.3538520835099563" start="10" duration="4" />
+                <frame x="177.25" y="121.55" scalex="0.9997100830078125" scaley="0.9997100830078125" centerx="80.35" centery="62.4" rotation="0.09203964622146549" start="14" duration="2" />
+                <frame x="177.25" y="121.55" scalex="0.9997100830078125" scaley="0.9997100830078125" centerx="80.35" centery="62.4" rotation="0.09203964622146549" start="16" duration="3" />
+                <frame x="123.3" y="259.6" scalex="0.9997100830078125" scaley="0.9997100830078125" centerx="80.45" centery="62.5" rotation="0.6156429491936175" start="19" duration="3" />
+                <frame x="123.3" y="264.9" scalex="0.9983062744140625" scaley="0.998321533203125" centerx="80.45" centery="62.4" rotation="0.24114044827507775" start="22" duration="4" />
+                <frame x="123.25" y="272.1" scalex="0.999725341796875" scaley="0.9997100830078125" centerx="80.45" centery="62.45" rotation="0.3538385013883969" start="26" duration="13" />
+                <frame x="146.05" y="222.9" scalex="1" scaley="1" centerx="80.5" centery="62.5" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_head2">
@@ -47,14 +71,14 @@
                 <item name="部件/元件 29" />
             </library>
             <frames>
-                <frame x="149.55" y="232.05" scalex="0.9991455078125" scaley="0.9991455078125" centerx="75" centery="6.95" width="88.05" height="45.65" rotation="-0.15702184208383493" />
-                <frame x="161.35" y="164.8" scalex="0.998626708984375" scaley="0.998626708984375" centerx="75.05" centery="6.95" width="89.55" height="53.6" rotation="0.26230725261902754" />
-                <frame x="179.4" y="131.8" scalex="0.99859619140625" scaley="0.99859619140625" centerx="75" centery="6.85" width="83.9" height="33" rotation="0.0005187837803474356" />
-                <frame x="179.4" y="131.8" scalex="0.99859619140625" scaley="0.99859619140625" centerx="75" centery="6.85" width="83.9" height="33" rotation="0.0005187837803474356" />
-                <frame x="122.4" y="264.75" scalex="0.99859619140625" scaley="0.998626708984375" centerx="75.05" centery="6.8" width="82.65" height="82.6" rotation="-0.7848793796171009" />
-                <frame x="122.4" y="270.2" scalex="0.996612548828125" scaley="0.9966583251953125" centerx="75.1" centery="6.75" width="86.75" height="41.65" rotation="0.10713231275116256" />
-                <frame x="122.35" y="280.2" scalex="0.9965972900390625" scaley="0.996612548828125" centerx="75.05" centery="6.8" width="87.7" height="44.95" rotation="0.1491226399745509" />
-                <frame x="149.55" y="232.05" scalex="0.9991455078125" scaley="0.9991455078125" centerx="75" centery="6.95" width="88.05" height="45.65" rotation="-0.15702184208383493" />
+                <frame x="149.55" y="232.05" scalex="0.9991455078125" scaley="0.9991455078125" centerx="75" centery="6.95" rotation="-0.15702184208383493" start="0" duration="10" />
+                <frame x="161.35" y="164.8" scalex="0.998626708984375" scaley="0.998626708984375" centerx="75.05" centery="6.95" rotation="0.26230725261902754" start="10" duration="4" />
+                <frame x="179.4" y="131.8" scalex="0.99859619140625" scaley="0.99859619140625" centerx="75" centery="6.85" rotation="0.0005187837803474356" start="14" duration="2" />
+                <frame x="179.4" y="131.8" scalex="0.99859619140625" scaley="0.99859619140625" centerx="75" centery="6.85" rotation="0.0005187837803474356" start="16" duration="3" />
+                <frame x="122.4" y="264.75" scalex="0.99859619140625" scaley="0.998626708984375" centerx="75.05" centery="6.8" rotation="-0.7848793796171009" start="19" duration="3" />
+                <frame x="122.4" y="270.2" scalex="0.996612548828125" scaley="0.9966583251953125" centerx="75.1" centery="6.75" rotation="0.10713231275116256" start="22" duration="4" />
+                <frame x="122.35" y="280.2" scalex="0.9965972900390625" scaley="0.996612548828125" centerx="75.05" centery="6.8" rotation="0.1491226399745509" start="26" duration="13" />
+                <frame x="149.55" y="232.05" scalex="0.9991455078125" scaley="0.9991455078125" centerx="75" centery="6.95" rotation="-0.15702184208383493" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_neck4">
@@ -62,13 +86,13 @@
                 <item name="部件/元件 1" />
             </library>
             <frames>
-                <frame x="178.65" y="204.45" scalex="0.9982147216796875" scaley="0.9982147216796875" centerx="41.9" centery="47.6" width="75.35" height="75.65" rotation="-0.756513784530558" />
-                <frame x="199.65" y="139.45" scalex="0.99822998046875" scaley="0.9982147216796875" centerx="41.85" centery="47.5" width="70.95" height="73.8" rotation="-0.49471466304751743" />
-                <frame x="216.65" y="109.45" scalex="0.99822998046875" scaley="0.9982147216796875" centerx="41.9" centery="47.55" width="70.95" height="73.8" rotation="-0.49471466304751743" />
-                <frame x="216.65" y="109.45" scalex="0.99822998046875" scaley="0.9982147216796875" centerx="41.9" centery="47.55" width="70.95" height="73.8" rotation="-0.49471466304751743" />
-                <frame x="153.65" y="249.45" scalex="0.99822998046875" scaley="0.9982147216796875" centerx="41.9" centery="47.6" width="70.95" height="73.8" rotation="-0.49471466304751743" />
-                <frame x="154.5" y="260.35" scalex="0.9980621337890625" scaley="0.9980621337890625" centerx="41.95" centery="47.5" width="72.1" height="74.5" rotation="-0.5434816699807214" />
-                <frame x="178.65" y="204.45" scalex="0.9982147216796875" scaley="0.9982147216796875" centerx="41.9" centery="47.6" width="75.35" height="75.65" rotation="-0.756513784530558" />
+                <frame x="178.65" y="204.45" scalex="0.9982147216796875" scaley="0.9982147216796875" centerx="41.9" centery="47.6" rotation="-0.756513784530558" start="0" duration="10" />
+                <frame x="199.65" y="139.45" scalex="0.99822998046875" scaley="0.9982147216796875" centerx="41.85" centery="47.5" rotation="-0.49471466304751743" start="10" duration="4" />
+                <frame x="216.65" y="109.45" scalex="0.99822998046875" scaley="0.9982147216796875" centerx="41.9" centery="47.55" rotation="-0.49471466304751743" start="14" duration="2" />
+                <frame x="216.65" y="109.45" scalex="0.99822998046875" scaley="0.9982147216796875" centerx="41.9" centery="47.55" rotation="-0.49471466304751743" start="16" duration="3" />
+                <frame x="153.65" y="249.45" scalex="0.99822998046875" scaley="0.9982147216796875" centerx="41.9" centery="47.6" rotation="-0.49471466304751743" start="19" duration="7" />
+                <frame x="154.5" y="260.35" scalex="0.9980621337890625" scaley="0.9980621337890625" centerx="41.95" centery="47.5" rotation="-0.5434816699807214" start="26" duration="13" />
+                <frame x="178.65" y="204.45" scalex="0.9982147216796875" scaley="0.9982147216796875" centerx="41.9" centery="47.6" rotation="-0.756513784530558" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_neck3">
@@ -76,13 +100,13 @@
                 <item name="部件/元件 2" />
             </library>
             <frames>
-                <frame x="213.5" y="187.85" scalex="0.999420166015625" scaley="0.999420166015625" centerx="39.55" centery="50.45" width="78.2" height="76.8" rotation="-0.8673026174583992" />
-                <frame x="235.55" y="140.9" scalex="0.9994354248046875" scaley="0.9994354248046875" centerx="39.65" centery="50.5" width="66.65" height="73.9" rotation="-0.34369079237075895" />
-                <frame x="245.55" y="127.95" scalex="0.9980926513671875" scaley="0.99810791015625" centerx="39.6" centery="50.45" width="54.85" height="65.55" rotation="0.10236312387104865" />
-                <frame x="245.55" y="127.95" scalex="0.9980926513671875" scaley="0.99810791015625" centerx="39.6" centery="50.45" width="54.85" height="65.55" rotation="0.10236312387104865" />
-                <frame x="186.55" y="239.95" scalex="0.9980621337890625" scaley="0.998077392578125" centerx="39.5" centery="50.5" width="76.4" height="78.05" rotation="-0.6830310447847645" />
-                <frame x="186.9" y="249.25" scalex="0.997894287109375" scaley="0.9979400634765625" centerx="39.55" centery="50.45" width="77.1" height="77.95" rotation="-0.7318073727817838" />
-                <frame x="213.5" y="187.85" scalex="0.999420166015625" scaley="0.999420166015625" centerx="39.55" centery="50.45" width="78.2" height="76.8" rotation="-0.8673026174583992" />
+                <frame x="213.5" y="187.85" scalex="0.999420166015625" scaley="0.999420166015625" centerx="39.55" centery="50.45" rotation="-0.8673026174583992" start="0" duration="10" />
+                <frame x="235.55" y="140.9" scalex="0.9994354248046875" scaley="0.9994354248046875" centerx="39.65" centery="50.5" rotation="-0.34369079237075895" start="10" duration="4" />
+                <frame x="245.55" y="127.95" scalex="0.9980926513671875" scaley="0.99810791015625" centerx="39.6" centery="50.45" rotation="0.10236312387104865" start="14" duration="2" />
+                <frame x="245.55" y="127.95" scalex="0.9980926513671875" scaley="0.99810791015625" centerx="39.6" centery="50.45" rotation="0.10236312387104865" start="16" duration="3" />
+                <frame x="186.55" y="239.95" scalex="0.9980621337890625" scaley="0.998077392578125" centerx="39.5" centery="50.5" rotation="-0.6830310447847645" start="19" duration="7" />
+                <frame x="186.9" y="249.25" scalex="0.997894287109375" scaley="0.9979400634765625" centerx="39.55" centery="50.45" rotation="-0.7318073727817838" start="26" duration="13" />
+                <frame x="213.5" y="187.85" scalex="0.999420166015625" scaley="0.999420166015625" centerx="39.55" centery="50.45" rotation="-0.8673026174583992" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_neck2">
@@ -90,14 +114,14 @@
                 <item name="部件/元件 3" />
             </library>
             <frames>
-                <frame x="255.95" y="197.95" scalex="0.9996337890625" scaley="0.9996337890625" centerx="48.5" centery="55" width="78.9" height="84.55" rotation="-0.3759941374450931" />
-                <frame x="273" y="161" scalex="0.9996337890625" scaley="0.9996337890625" centerx="48.6" centery="55.05" width="65.35" height="74.15" rotation="-0.11417104751224197" />
-                <frame x="278" y="156" scalex="0.9990386962890625" scaley="0.9990234375" centerx="48.55" centery="55.05" width="62.8" height="72" rotation="0.07361243569088022" />
-                <frame x="278" y="156" scalex="0.9990386962890625" scaley="0.9990234375" centerx="48.55" centery="55.05" width="62.8" height="72" rotation="0.07361243569088022" />
-                <frame x="228" y="235" scalex="0.9990386962890625" scaley="0.9990081787109375" centerx="48.55" centery="55" width="88.25" height="89.3" rotation="-0.7117764066427528" />
-                <frame x="228.05" y="238.75" scalex="0.997314453125" scaley="0.997314453125" centerx="48.5" centery="55.1" width="88.35" height="89.1" rotation="-0.7311314624971217" />
-                <frame x="228.1" y="243.8" scalex="0.9988555908203125" scaley="0.9988555908203125" centerx="48.55" centery="54.95" width="88.75" height="89.15" rotation="-0.760549805162573" />
-                <frame x="255.95" y="197.95" scalex="0.9996337890625" scaley="0.9996337890625" centerx="48.5" centery="55" width="78.9" height="84.55" rotation="-0.3759941374450931" />
+                <frame x="255.95" y="197.95" scalex="0.9996337890625" scaley="0.9996337890625" centerx="48.5" centery="55" rotation="-0.3759941374450931" start="0" duration="10" />
+                <frame x="273" y="161" scalex="0.9996337890625" scaley="0.9996337890625" centerx="48.6" centery="55.05" rotation="-0.11417104751224197" start="10" duration="4" />
+                <frame x="278" y="156" scalex="0.9990386962890625" scaley="0.9990234375" centerx="48.55" centery="55.05" rotation="0.07361243569088022" start="14" duration="2" />
+                <frame x="278" y="156" scalex="0.9990386962890625" scaley="0.9990234375" centerx="48.55" centery="55.05" rotation="0.07361243569088022" start="16" duration="3" />
+                <frame x="228" y="235" scalex="0.9990386962890625" scaley="0.9990081787109375" centerx="48.55" centery="55" rotation="-0.7117764066427528" start="19" duration="3" />
+                <frame x="228.05" y="238.75" scalex="0.997314453125" scaley="0.997314453125" centerx="48.5" centery="55.1" rotation="-0.7311314624971217" start="22" duration="4" />
+                <frame x="228.1" y="243.8" scalex="0.9988555908203125" scaley="0.9988555908203125" centerx="48.55" centery="54.95" rotation="-0.760549805162573" start="26" duration="13" />
+                <frame x="255.95" y="197.95" scalex="0.9996337890625" scaley="0.9996337890625" centerx="48.5" centery="55" rotation="-0.3759941374450931" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_neck1">
@@ -105,13 +129,13 @@
                 <item name="部件/元件 4" />
             </library>
             <frames>
-                <frame x="276.95" y="219.9" scalex="1" scaley="1" centerx="39" centery="54" width="62" height="80" rotation="0" />
-                <frame x="287.95" y="187.9" scalex="1" scaley="1" centerx="39" centery="54.05" width="80.6" height="93.3" rotation="0.2617948604252963" />
-                <frame x="287.95" y="187.9" scalex="0.9995574951171875" scaley="0.9995574951171875" centerx="38.95" centery="54.05" width="88.3" height="97.85" rotation="0.4016920440677037" />
-                <frame x="287.95" y="187.9" scalex="0.9995574951171875" scaley="0.9995574951171875" centerx="38.95" centery="54.05" width="88.3" height="97.85" rotation="0.4016920440677037" />
-                <frame x="258.95" y="239.95" scalex="0.9995574951171875" scaley="0.9995574951171875" centerx="38.95" centery="54" width="97.6" height="101.2" rotation="-0.6454796744663203" />
-                <frame x="259.15" y="244.25" scalex="0.9991302490234375" scaley="0.9991302490234375" centerx="38.95" centery="53.9" width="100.15" height="100.45" rotation="-0.7737550894277309" />
-                <frame x="276.95" y="219.9" scalex="1" scaley="1" centerx="39" centery="54" width="62" height="80" rotation="0" />
+                <frame x="276.95" y="219.9" scalex="1" scaley="1" centerx="39" centery="54" rotation="0" start="0" duration="10" />
+                <frame x="287.95" y="187.9" scalex="1" scaley="1" centerx="39" centery="54.05" rotation="0.2617948604252963" start="10" duration="4" />
+                <frame x="287.95" y="187.9" scalex="0.9995574951171875" scaley="0.9995574951171875" centerx="38.95" centery="54.05" rotation="0.4016920440677037" start="14" duration="2" />
+                <frame x="287.95" y="187.9" scalex="0.9995574951171875" scaley="0.9995574951171875" centerx="38.95" centery="54.05" rotation="0.4016920440677037" start="16" duration="3" />
+                <frame x="258.95" y="239.95" scalex="0.9995574951171875" scaley="0.9995574951171875" centerx="38.95" centery="54" rotation="-0.6454796744663203" start="19" duration="7" />
+                <frame x="259.15" y="244.25" scalex="0.9991302490234375" scaley="0.9991302490234375" centerx="38.95" centery="53.9" rotation="-0.7737550894277309" start="26" duration="13" />
+                <frame x="276.95" y="219.9" scalex="1" scaley="1" centerx="39" centery="54" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_eyebrow_L">
@@ -119,14 +143,14 @@
                 <item name="部件/元件 12" />
             </library>
             <frames>
-                <frame x="111.95" y="206.9" scalex="0.9996185302734375" scaley="0.9996185302734375" centerx="8.95" centery="16.55" width="93.3" height="68.8" rotation="-0.11817537652728512" />
-                <frame x="127" y="143.9" scalex="0.9996185302734375" scaley="0.9996185302734375" centerx="8.95" centery="16.55" width="100.15" height="104.8" rotation="-0.903561822015937" />
-                <frame x="138" y="118.9" scalex="0.9996337890625" scaley="0.9996337890625" centerx="9" centery="16.55" width="88.5" height="103.15" rotation="-1.1653614761311955" />
-                <frame x="138" y="118.9" scalex="0.9996337890625" scaley="0.9996337890625" centerx="9" centery="16.55" width="88.5" height="103.15" rotation="-1.1653614761311955" />
-                <frame x="90" y="241.9" scalex="0.9996337890625" scaley="0.9996337890625" centerx="9.05" centery="16.55" width="88.5" height="103.15" rotation="-1.1653614761311955" />
-                <frame x="83.55" y="260.4" scalex="0.9980926513671875" scaley="0.9980926513671875" centerx="9.05" centery="16.5" width="104.85" height="96.05" rotation="-0.5610867626827993" />
-                <frame x="83.6" y="260.4" scalex="0.9978485107421875" scaley="0.9978485107421875" centerx="9.1" centery="16.5" width="104.75" height="99.05" rotation="-0.6403190009059646" />
-                <frame x="112.05" y="206.9" scalex="0.9996490478515625" scaley="0.9996490478515625" centerx="8.95" centery="16.5" width="93.3" height="68.8" rotation="-0.11816046282518067" />
+                <frame x="111.95" y="206.9" scalex="0.9996185302734375" scaley="0.9996185302734375" centerx="8.95" centery="16.55" rotation="-0.11817537652728512" start="0" duration="10" />
+                <frame x="127" y="143.9" scalex="0.9996185302734375" scaley="0.9996185302734375" centerx="8.95" centery="16.55" rotation="-0.903561822015937" start="10" duration="4" />
+                <frame x="138" y="118.9" scalex="0.9996337890625" scaley="0.9996337890625" centerx="9" centery="16.55" rotation="-1.1653614761311955" start="14" duration="2" />
+                <frame x="138" y="118.9" scalex="0.9996337890625" scaley="0.9996337890625" centerx="9" centery="16.55" rotation="-1.1653614761311955" start="16" duration="3" />
+                <frame x="90" y="241.9" scalex="0.9996337890625" scaley="0.9996337890625" centerx="9.05" centery="16.55" rotation="-1.1653614761311955" start="19" duration="3" />
+                <frame x="83.55" y="260.4" scalex="0.9980926513671875" scaley="0.9980926513671875" centerx="9.05" centery="16.5" rotation="-0.5610867626827993" start="22" duration="4" />
+                <frame x="83.6" y="260.4" scalex="0.9978485107421875" scaley="0.9978485107421875" centerx="9.1" centery="16.5" rotation="-0.6403190009059646" start="26" duration="13" />
+                <frame x="112.05" y="206.9" scalex="0.9996490478515625" scaley="0.9996490478515625" centerx="8.95" centery="16.5" rotation="-0.11816046282518067" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_front_foot_R">
@@ -134,8 +158,8 @@
                 <item name="部件/元件 13" />
             </library>
             <frames>
-                <frame x="295.2" y="312.35" scalex="1" scaley="1" centerx="39.5" centery="11.5" width="43" height="21" rotation="0" />
-                <frame x="295.2" y="312.35" scalex="1" scaley="1" centerx="39.5" centery="11.5" width="43" height="21" rotation="0" />
+                <frame x="295.2" y="312.35" scalex="1" scaley="1" centerx="39.5" centery="11.5" rotation="0" start="0" duration="39" />
+                <frame x="295.2" y="312.35" scalex="1" scaley="1" centerx="39.5" centery="11.5" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_front_leg_R2">
@@ -143,12 +167,12 @@
                 <item name="部件/元件 7" />
             </library>
             <frames>
-                <frame x="325.6" y="276.45" scalex="1" scaley="1" centerx="31.5" centery="41" width="93" height="82" rotation="0" />
-                <frame x="311.6" y="266.45" scalex="0.998443603515625" scaley="0.998443603515625" centerx="31.6" centery="41" width="115.7" height="109.25" rotation="-0.35862340291894224" />
-                <frame x="311.6" y="266.45" scalex="0.998443603515625" scaley="0.998443603515625" centerx="31.6" centery="41" width="115.7" height="109.25" rotation="-0.35862340291894224" />
-                <frame x="323.65" y="275.5" scalex="0.9966583251953125" scaley="0.9966583251953125" centerx="31.6" centery="41.05" width="93.7" height="82.8" rotation="-0.012038553391594188" />
-                <frame x="324.65" y="280.5" scalex="0.9962921142578125" scaley="0.9962921142578125" centerx="31.65" centery="41.05" width="99.9" height="90" rotation="0.09347668794567225" />
-                <frame x="325.6" y="276.45" scalex="1" scaley="1" centerx="31.5" centery="41" width="93" height="82" rotation="0" />
+                <frame x="325.6" y="276.45" scalex="1" scaley="1" centerx="31.5" centery="41" rotation="0" start="0" duration="10" />
+                <frame x="311.6" y="266.45" scalex="0.998443603515625" scaley="0.998443603515625" centerx="31.6" centery="41" rotation="-0.35862340291894224" start="10" duration="6" />
+                <frame x="311.6" y="266.45" scalex="0.998443603515625" scaley="0.998443603515625" centerx="31.6" centery="41" rotation="-0.35862340291894224" start="16" duration="3" />
+                <frame x="323.65" y="275.5" scalex="0.9966583251953125" scaley="0.9966583251953125" centerx="31.6" centery="41.05" rotation="-0.012038553391594188" start="19" duration="7" />
+                <frame x="324.65" y="280.5" scalex="0.9962921142578125" scaley="0.9962921142578125" centerx="31.65" centery="41.05" rotation="0.09347668794567225" start="26" duration="13" />
+                <frame x="325.6" y="276.45" scalex="1" scaley="1" centerx="31.5" centery="41" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_front_leg_R1">
@@ -156,12 +180,12 @@
                 <item name="部件/元件 5" />
             </library>
             <frames>
-                <frame x="304.95" y="237.05" scalex="1" scaley="1" centerx="9.5" centery="8" width="43" height="51" rotation="0" />
-                <frame x="311" y="217.1" scalex="1" scaley="1" centerx="9.55" centery="7.95" width="62.75" height="65.65" rotation="0.5235966450694268" />
-                <frame x="311" y="217.1" scalex="1" scaley="1" centerx="9.55" centery="7.95" width="62.75" height="65.65" rotation="0.5235966450694268" />
-                <frame x="295.95" y="245.2" scalex="1" scaley="1" centerx="9.35" centery="7.95" width="54.75" height="60.4" rotation="-0.26176636460163244" />
-                <frame x="295.95" y="249.2" scalex="1" scaley="1" centerx="9.35" centery="7.9" width="54.75" height="60.4" rotation="-0.26176636460163244" />
-                <frame x="304.95" y="237.05" scalex="1" scaley="1" centerx="9.5" centery="8" width="43" height="51" rotation="0" />
+                <frame x="304.95" y="237.05" scalex="1" scaley="1" centerx="9.5" centery="8" rotation="0" start="0" duration="10" />
+                <frame x="311" y="217.1" scalex="1" scaley="1" centerx="9.55" centery="7.95" rotation="0.5235966450694268" start="10" duration="6" />
+                <frame x="311" y="217.1" scalex="1" scaley="1" centerx="9.55" centery="7.95" rotation="0.5235966450694268" start="16" duration="3" />
+                <frame x="295.95" y="245.2" scalex="1" scaley="1" centerx="9.35" centery="7.95" rotation="-0.26176636460163244" start="19" duration="7" />
+                <frame x="295.95" y="249.2" scalex="1" scaley="1" centerx="9.35" centery="7.9" rotation="-0.26176636460163244" start="26" duration="13" />
+                <frame x="304.95" y="237.05" scalex="1" scaley="1" centerx="9.5" centery="8" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_hind_foot_R">
@@ -169,11 +193,11 @@
                 <item name="部件/元件 9" />
             </library>
             <frames>
-                <frame x="416.95" y="305.95" scalex="1" scaley="1" centerx="36.5" centery="5.75" width="40" height="16" rotation="0" />
-                <frame x="416.95" y="305.95" scalex="1" scaley="1" centerx="36.5" centery="5.75" width="40" height="16" rotation="0" />
-                <frame x="434.95" y="304.95" scalex="1" scaley="1" centerx="36.5" centery="5.75" width="40" height="16" rotation="0" />
-                <frame x="434.95" y="304.95" scalex="1" scaley="1" centerx="36.5" centery="5.75" width="40" height="16" rotation="0" />
-                <frame x="416.95" y="305.95" scalex="1" scaley="1" centerx="36.5" centery="5.75" width="40" height="16" rotation="0" />
+                <frame x="416.95" y="305.95" scalex="1" scaley="1" centerx="36.5" centery="5.75" rotation="0" start="0" duration="16" />
+                <frame x="416.95" y="305.95" scalex="1" scaley="1" centerx="36.5" centery="5.75" rotation="0" start="16" duration="3" />
+                <frame x="434.95" y="304.95" scalex="1" scaley="1" centerx="36.5" centery="5.75" rotation="0" start="19" duration="7" />
+                <frame x="434.95" y="304.95" scalex="1" scaley="1" centerx="36.5" centery="5.75" rotation="0" start="26" duration="13" />
+                <frame x="416.95" y="305.95" scalex="1" scaley="1" centerx="36.5" centery="5.75" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_hind_leg_R1">
@@ -181,12 +205,12 @@
                 <item name="部件/元件 17" />
             </library>
             <frames>
-                <frame x="387.4" y="247.6" scalex="1" scaley="1" centerx="24.5" centery="16" width="77" height="64" rotation="0" />
-                <frame x="387.4" y="247.6" scalex="0.99957275390625" scaley="0.99957275390625" centerx="24.5" centery="16" width="84.9" height="73.8" rotation="0.13535196660996918" />
-                <frame x="387.4" y="247.6" scalex="0.99957275390625" scaley="0.99957275390625" centerx="24.5" centery="16" width="84.9" height="73.8" rotation="0.13535196660996918" />
-                <frame x="377.4" y="233.1" scalex="0.9996490478515625" scaley="0.9996490478515625" centerx="24.45" centery="16.1" width="85.6" height="74.65" rotation="0.14807814819502182" />
-                <frame x="377.4" y="231.6" scalex="0.9996490478515625" scaley="0.9996490478515625" centerx="24.5" centery="16.1" width="85.6" height="74.65" rotation="0.14807814819502182" />
-                <frame x="387.4" y="247.6" scalex="1" scaley="1" centerx="24.5" centery="16" width="77" height="64" rotation="0" />
+                <frame x="387.4" y="247.6" scalex="1" scaley="1" centerx="24.5" centery="16" rotation="0" start="0" duration="10" />
+                <frame x="387.4" y="247.6" scalex="0.99957275390625" scaley="0.99957275390625" centerx="24.5" centery="16" rotation="0.13535196660996918" start="10" duration="6" />
+                <frame x="387.4" y="247.6" scalex="0.99957275390625" scaley="0.99957275390625" centerx="24.5" centery="16" rotation="0.13535196660996918" start="16" duration="3" />
+                <frame x="377.4" y="233.1" scalex="0.9996490478515625" scaley="0.9996490478515625" centerx="24.45" centery="16.1" rotation="0.14807814819502182" start="19" duration="7" />
+                <frame x="377.4" y="231.6" scalex="0.9996490478515625" scaley="0.9996490478515625" centerx="24.5" centery="16.1" rotation="0.14807814819502182" start="26" duration="13" />
+                <frame x="387.4" y="247.6" scalex="1" scaley="1" centerx="24.5" centery="16" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_hind_leg_R2">
@@ -194,12 +218,12 @@
                 <item name="部件/元件 19" />
             </library>
             <frames>
-                <frame x="438" y="275.4" scalex="1" scaley="1" centerx="24" centery="7.5" width="35" height="41" rotation="0" />
-                <frame x="434.5" y="284.15" scalex="1" scaley="0.7706146240234375" centerx="24" centery="7.5" width="35" height="31.6" rotation="0" />
-                <frame x="434.5" y="284.15" scalex="1" scaley="0.7706146240234375" centerx="24" centery="7.5" width="35" height="31.6" rotation="0" />
-                <frame x="422.25" y="267.35" scalex="0.9988250732421875" scaley="0.9988250732421875" centerx="23.95" centery="7.45" width="53.75" height="52.5" rotation="-0.9308701421497186" />
-                <frame x="422.25" y="267.35" scalex="0.9988250732421875" scaley="0.9988250732421875" centerx="23.95" centery="7.45" width="53.75" height="52.5" rotation="-0.9308701421497186" />
-                <frame x="438" y="275.4" scalex="1" scaley="1" centerx="24" centery="7.5" width="35" height="41" rotation="0" />
+                <frame x="438" y="275.4" scalex="1" scaley="1" centerx="24" centery="7.5" rotation="0" start="0" duration="10" />
+                <frame x="434.5" y="284.15" scalex="1" scaley="0.7706146240234375" centerx="24" centery="7.5" rotation="0" start="10" duration="6" />
+                <frame x="434.5" y="284.15" scalex="1" scaley="0.7706146240234375" centerx="24" centery="7.5" rotation="0" start="16" duration="3" />
+                <frame x="422.25" y="267.35" scalex="0.9988250732421875" scaley="0.9988250732421875" centerx="23.95" centery="7.45" rotation="-0.9308701421497186" start="19" duration="7" />
+                <frame x="422.25" y="267.35" scalex="0.9988250732421875" scaley="0.9988250732421875" centerx="23.95" centery="7.45" rotation="-0.9308701421497186" start="26" duration="13" />
+                <frame x="438" y="275.4" scalex="1" scaley="1" centerx="24" centery="7.5" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_tail">
@@ -207,13 +231,13 @@
                 <item name="尾巴" />
             </library>
             <frames>
-                <frame x="424.45" y="242.6" scalex="1" scaley="1" centerx="20.45" centery="53.55" width="401" height="93" rotation="0" />
-                <frame x="424.45" y="247.6" scalex="0.9996185302734375" scaley="0.9996185302734375" centerx="20.45" centery="53.55" width="408.85" height="138" rotation="0.11409594636950174" />
-                <frame x="424.45" y="249.6" scalex="0.9996185302734375" scaley="0.9996185302734375" centerx="20.5" centery="53.5" width="408.85" height="138" rotation="0.11409594636950174" />
-                <frame x="424.45" y="249.6" scalex="0.9996185302734375" scaley="0.9996185302734375" centerx="20.5" centery="53.5" width="408.85" height="138" rotation="0.11409594636950174" />
-                <frame x="409.95" y="216.6" scalex="0.998748779296875" scaley="0.998748779296875" centerx="20.4" centery="53.5" width="410.65" height="162.7" rotation="-0.17894285364849516" />
-                <frame x="407.95" y="215.1" scalex="0.499664306640625" scaley="0.9979248046875" centerx="20.45" centery="53.55" width="215.3" height="132.5" rotation="-0.20983206018399722" />
-                <frame x="424.45" y="242.6" scalex="1" scaley="1" centerx="20.45" centery="53.55" width="401" height="93" rotation="0" />
+                <frame x="424.45" y="242.6" scalex="1" scaley="1" centerx="20.45" centery="53.55" rotation="0" start="0" duration="10" />
+                <frame x="424.45" y="247.6" scalex="0.9996185302734375" scaley="0.9996185302734375" centerx="20.45" centery="53.55" rotation="0.11409594636950174" start="10" duration="4" />
+                <frame x="424.45" y="249.6" scalex="0.9996185302734375" scaley="0.9996185302734375" centerx="20.5" centery="53.5" rotation="0.11409594636950174" start="14" duration="2" />
+                <frame x="424.45" y="249.6" scalex="0.9996185302734375" scaley="0.9996185302734375" centerx="20.5" centery="53.5" rotation="0.11409594636950174" start="16" duration="3" />
+                <frame x="409.95" y="216.6" scalex="0.998748779296875" scaley="0.998748779296875" centerx="20.4" centery="53.5" rotation="-0.17894285364849516" start="19" duration="7" />
+                <frame x="407.95" y="215.1" scalex="0.499664306640625" scaley="0.9979248046875" centerx="20.45" centery="53.55" rotation="-0.20980303172811535" start="26" duration="13" />
+                <frame x="424.45" y="242.6" scalex="1" scaley="1" centerx="20.45" centery="53.55" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_body">
@@ -221,13 +245,13 @@
                 <item name="部件/元件 15" />
             </library>
             <frames>
-                <frame x="378.45" y="253.05" scalex="1" scaley="1" centerx="116" centery="73" width="170" height="132" rotation="0" />
-                <frame x="378.45" y="247.05" scalex="0.9990081787109375" scaley="0.9990081787109375" centerx="115.95" centery="72.95" width="201.4" height="176.4" rotation="0.3020227076392702" />
-                <frame x="377.95" y="249.05" scalex="0.9986724853515625" scaley="0.9986724853515625" centerx="116.05" centery="72.95" width="204.05" height="181" rotation="0.3407253624969558" />
-                <frame x="377.95" y="249.05" scalex="0.9986724853515625" scaley="0.9986724853515625" centerx="116.05" centery="72.95" width="204.05" height="181" rotation="0.3407253624969558" />
-                <frame x="367.45" y="239.1" scalex="0.9968719482421875" scaley="0.9968719482421875" centerx="116" centery="73.05" width="198.15" height="171.6" rotation="-0.26670013683711324" />
-                <frame x="367.45" y="238.15" scalex="0.99664306640625" scaley="0.99664306640625" centerx="115.85" centery="73.15" width="202.85" height="179.2" rotation="-0.328870034588359" />
-                <frame x="378.45" y="253.05" scalex="1" scaley="1" centerx="116" centery="73" width="170" height="132" rotation="0" />
+                <frame x="378.45" y="253.05" scalex="1" scaley="1" centerx="116" centery="73" rotation="0" start="0" duration="10" />
+                <frame x="378.45" y="247.05" scalex="0.9990081787109375" scaley="0.9990081787109375" centerx="115.95" centery="72.95" rotation="0.3020227076392702" start="10" duration="4" />
+                <frame x="377.95" y="249.05" scalex="0.9986724853515625" scaley="0.9986724853515625" centerx="116.05" centery="72.95" rotation="0.3407253624969558" start="14" duration="2" />
+                <frame x="377.95" y="249.05" scalex="0.9986724853515625" scaley="0.9986724853515625" centerx="116.05" centery="72.95" rotation="0.3407253624969558" start="16" duration="3" />
+                <frame x="367.45" y="239.1" scalex="0.9968719482421875" scaley="0.9968719482421875" centerx="116" centery="73.05" rotation="-0.26670013683711324" start="19" duration="7" />
+                <frame x="367.45" y="238.15" scalex="0.99664306640625" scaley="0.99664306640625" centerx="115.85" centery="73.15" rotation="-0.328870034588359" start="26" duration="13" />
+                <frame x="378.45" y="253.05" scalex="1" scaley="1" centerx="116" centery="73" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_front_foot_L">
@@ -235,8 +259,8 @@
                 <item name="部件/元件 14" />
             </library>
             <frames>
-                <frame x="276.5" y="295.85" scalex="1" scaley="1" centerx="38" centery="8" width="42" height="20" rotation="0" />
-                <frame x="276.5" y="295.85" scalex="1" scaley="1" centerx="38" centery="8" width="42" height="20" rotation="0" />
+                <frame x="276.5" y="295.85" scalex="1" scaley="1" centerx="38" centery="8" rotation="0" start="0" duration="39" />
+                <frame x="276.5" y="295.85" scalex="1" scaley="1" centerx="38" centery="8" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_front_leg_L2">
@@ -244,10 +268,10 @@
                 <item name="部件/元件 8" />
             </library>
             <frames>
-                <frame x="305.5" y="259.35" scalex="1" scaley="1" centerx="31" centery="47.5" width="78" height="88" rotation="0" />
-                <frame x="296" y="253.85" scalex="1" scaley="1" centerx="30.95" centery="47.45" width="98.15" height="105.2" rotation="-0.2617948604252963" />
-                <frame x="296" y="253.85" scalex="1" scaley="1" centerx="30.95" centery="47.45" width="98.15" height="105.2" rotation="-0.2617948604252963" />
-                <frame x="305.5" y="259.35" scalex="1" scaley="1" centerx="31" centery="47.5" width="78" height="88" rotation="0" />
+                <frame x="305.5" y="259.35" scalex="1" scaley="1" centerx="31" centery="47.5" rotation="0" start="0" duration="10" />
+                <frame x="296" y="253.85" scalex="1" scaley="1" centerx="30.95" centery="47.45" rotation="-0.2617948604252963" start="10" duration="6" />
+                <frame x="296" y="253.85" scalex="1" scaley="1" centerx="30.95" centery="47.45" rotation="-0.2617948604252963" start="16" duration="23" />
+                <frame x="305.5" y="259.35" scalex="1" scaley="1" centerx="31" centery="47.5" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_front_leg_L1">
@@ -255,10 +279,10 @@
                 <item name="部件/元件 6" />
             </library>
             <frames>
-                <frame x="291.35" y="223.85" scalex="1" scaley="1" centerx="9" centery="7" width="34" height="43" rotation="0" />
-                <frame x="290.35" y="211.85" scalex="1" scaley="1" centerx="9" centery="7" width="44" height="50.35" rotation="0.2617948604252963" />
-                <frame x="290.35" y="211.85" scalex="1" scaley="1" centerx="9" centery="7" width="44" height="50.35" rotation="0.2617948604252963" />
-                <frame x="291.35" y="223.85" scalex="1" scaley="1" centerx="9" centery="7" width="34" height="43" rotation="0" />
+                <frame x="291.35" y="223.85" scalex="1" scaley="1" centerx="9" centery="7" rotation="0" start="0" duration="10" />
+                <frame x="290.35" y="211.85" scalex="1" scaley="1" centerx="9" centery="7" rotation="0.2617948604252963" start="10" duration="6" />
+                <frame x="290.35" y="211.85" scalex="1" scaley="1" centerx="9" centery="7" rotation="0.2617948604252963" start="16" duration="23" />
+                <frame x="291.35" y="223.85" scalex="1" scaley="1" centerx="9" centery="7" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_hind_foot_L">
@@ -266,8 +290,8 @@
                 <item name="部件/元件 10" />
             </library>
             <frames>
-                <frame x="391.35" y="290.35" scalex="1" scaley="1" centerx="39.5" centery="10" width="43" height="16" rotation="0" />
-                <frame x="391.35" y="290.35" scalex="1" scaley="1" centerx="39.5" centery="10" width="43" height="16" rotation="0" />
+                <frame x="391.35" y="290.35" scalex="1" scaley="1" centerx="39.5" centery="10" rotation="0" start="0" duration="39" />
+                <frame x="391.35" y="290.35" scalex="1" scaley="1" centerx="39.5" centery="10" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_hind_leg_L1">
@@ -275,8 +299,8 @@
                 <item name="部件/元件 18" />
             </library>
             <frames>
-                <frame x="364.45" y="233.5" scalex="1" scaley="1" centerx="19" centery="10.65" width="75" height="56" rotation="0" />
-                <frame x="364.45" y="233.5" scalex="1" scaley="1" centerx="19" centery="10.65" width="75" height="56" rotation="0" />
+                <frame x="364.45" y="233.5" scalex="1" scaley="1" centerx="19" centery="10.65" rotation="0" start="0" duration="39" />
+                <frame x="364.45" y="233.5" scalex="1" scaley="1" centerx="19" centery="10.65" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="dragon_hind_leg_L2">
@@ -284,8 +308,8 @@
                 <item name="部件/元件 20" />
             </library>
             <frames>
-                <frame x="417.95" y="262.35" scalex="1" scaley="1" centerx="30.5" centery="7.5" width="42" height="38" rotation="0" />
-                <frame x="417.95" y="262.35" scalex="1" scaley="1" centerx="30.5" centery="7.5" width="42" height="38" rotation="0" />
+                <frame x="417.95" y="262.35" scalex="1" scaley="1" centerx="30.5" centery="7.5" rotation="0" start="0" duration="39" />
+                <frame x="417.95" y="262.35" scalex="1" scaley="1" centerx="30.5" centery="7.5" rotation="0" start="39" duration="1" />
             </frames>
         </layer>
         <layer name="shadow">
@@ -293,7 +317,7 @@
                 <item name="元件 98" />
             </library>
             <frames>
-                <frame x="343.95" y="304.55" scalex="4.8839263916015625" scaley="1.629730224609375" centerx="33" centery="19.5" width="322.3" height="63.55" rotation="0" />
+                <frame x="343.95" y="304.55" scalex="4.8839111328125" scaley="1.629730224609375" centerx="33" centery="19.5" rotation="0" start="0" duration="40" />
             </frames>
         </layer>
         <layer name="aabb">
@@ -301,7 +325,7 @@
                 <item name="场景1-800.jpg" />
             </library>
             <frames>
-                <frame x="400" y="240" scalex="1" scaley="1" centerx="0" centery="0" width="800" height="480" rotation="0" />
+                <frame x="400" y="240" scalex="1" scaley="1" centerx="0" centery="0" rotation="0" start="0" duration="40" />
             </frames>
         </layer>
     </timeline>
