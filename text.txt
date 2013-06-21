@@ -1,331 +1,772 @@
 <flash>
-    <timeline index="0">
+    <graphic path="imgs_00.png" index="0">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_01.png" index="1">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_02.png" index="2">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_03.png" index="3">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_05.png" index="4">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_06.png" index="5">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_07.png" index="6">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_08.png" index="7">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_09.png" index="8">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_10.png" index="9">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_11.png" index="10">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_12.png" index="11">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_13.png" index="12">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_14.png" index="13">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_15.png" index="14">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_16.png" index="15">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_17.png" index="16">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_18.png" index="17">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_19.png" index="18">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_20.png" index="19">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_21.png" index="20">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_22.png" index="21">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_23.png" index="22">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_24.png" index="23">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_25.png" index="24">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_26.png" index="25">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_27.png" index="26">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_28.png" index="27">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_29.png" index="28">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <timeline name="尾巴" index="29" framecount="24">
         <layer name="图层 1">
-            <library>
-                <item name="部件/元件 21" />
-                <item name="部件/元件 22" />
-                <item name="部件/元件 23" />
-                <item name="部件/元件 24" />
-                <item name="部件/元件 25" />
-                <item name="部件/元件 26" />
-                <item name="部件/元件 27" />
-                <item name="部件/元件 28" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 21" index="20" />
+                <refer name="部件/元件 22" index="21" />
+                <refer name="部件/元件 23" index="22" />
+                <refer name="部件/元件 24" index="23" />
+                <refer name="部件/元件 25" index="24" />
+                <refer name="部件/元件 26" index="25" />
+                <refer name="部件/元件 27" index="26" />
+                <refer name="部件/元件 28" index="27" />
+            </drawable>
             <frames>
-                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="0" duration="3" />
-                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="3" duration="3" />
-                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="6" duration="3" />
-                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="9" duration="3" />
-                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="12" duration="3" />
-                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="15" duration="3" />
-                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="18" duration="3" />
-                <frame x="200.5" y="46.5" scalex="1" scaley="1" centerx="200.5" centery="46.5" rotation="0" start="21" duration="3" />
+                <frame drawable="0" start="0" duration="3">
+                    <position x="200.5" y="200.5" scale="1,1" center="200.5,46.5" rotation="0" />
+                </frame>
+                <frame drawable="1" start="3" duration="3">
+                    <position x="200.5" y="200.5" scale="1,1" center="200.5,46.5" rotation="0" />
+                </frame>
+                <frame drawable="2" start="6" duration="3">
+                    <position x="200.5" y="200.5" scale="1,1" center="200.5,46.5" rotation="0" />
+                </frame>
+                <frame drawable="3" start="9" duration="3">
+                    <position x="200.5" y="200.5" scale="1,1" center="200.5,46.5" rotation="0" />
+                </frame>
+                <frame drawable="4" start="12" duration="3">
+                    <position x="200.5" y="200.5" scale="1,1" center="200.5,46.5" rotation="0" />
+                </frame>
+                <frame drawable="5" start="15" duration="3">
+                    <position x="200.5" y="200.5" scale="1,1" center="200.5,46.5" rotation="0" />
+                </frame>
+                <frame drawable="6" start="18" duration="3">
+                    <position x="200.5" y="200.5" scale="1,1" center="200.5,46.5" rotation="0" />
+                </frame>
+                <frame drawable="7" start="21" duration="3">
+                    <position x="200.5" y="200.5" scale="1,1" center="200.5,46.5" rotation="0" />
+                </frame>
             </frames>
         </layer>
     </timeline>
-    <timeline index="1">
-        <layer name="action">
-            <library>
-            </library>
-            <frames>
-            </frames>
-        </layer>
-        <layer name="label">
-            <library>
-            </library>
+    <graphic path="imgs_30.png" index="30">
+        <position x="4" y="4" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_00.png" index="31">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_01.png" index="32">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_02.png" index="33">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_03.png" index="34">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_04.png" index="35">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_05.png" index="36">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_06.png" index="37">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_07.png" index="38">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_08.png" index="39">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_09.png" index="40">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_10.png" index="41">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_11.png" index="42">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_12.png" index="43">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_13.png" index="44">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_14.png" index="45">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_15.png" index="46">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_16.png" index="47">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_17.png" index="48">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_18.png" index="49">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_19.png" index="50">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_20.png" index="51">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_21.png" index="52">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_22.png" index="53">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_23.png" index="54">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_24.png" index="55">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_25.png" index="56">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_26.png" index="57">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_27.png" index="58">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_28.png" index="59">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_29.png" index="60">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <graphic path="imgs_30.png" index="61">
+        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+    </graphic>
+    <timeline name="main" index="31" framecount="40">
+        <layer name="图层 1">
+            <drawable>
+            </drawable>
             <frames>
             </frames>
         </layer>
         <layer name="dragon_eyebrow_R">
-            <library>
-                <item name="部件/元件 11" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 11" index="10" />
+            </drawable>
             <frames>
-                <frame x="126.05" y="208.55" scalex="1" scaley="1" centerx="17" centery="13.5" rotation="0" start="0" duration="10" />
-                <frame x="139.6" y="131.1" scalex="0.9994659423828125" scaley="0.999481201171875" centerx="17.1" centery="13.6" rotation="-0.4234601901857934" start="10" duration="4" />
-                <frame x="145.6" y="105.1" scalex="0.998260498046875" scaley="0.998260498046875" centerx="17.2" centery="13.5" rotation="-0.8395972200060869" start="14" duration="2" />
-                <frame x="145.6" y="105.1" scalex="0.998260498046875" scaley="0.998260498046875" centerx="17.2" centery="13.5" rotation="-0.8395972200060869" start="16" duration="3" />
-                <frame x="96.6" y="228.1" scalex="0.998260498046875" scaley="0.998260498046875" centerx="17.1" centery="13.6" rotation="-0.8395972200060869" start="19" duration="3" />
-                <frame x="99.1" y="244.6" scalex="0.9976806640625" scaley="0.9976806640625" centerx="17.15" centery="13.55" rotation="-0.13635571202482002" start="22" duration="4" />
-                <frame x="99.1" y="248.6" scalex="0.9982452392578125" scaley="0.998260498046875" centerx="17.1" centery="13.55" rotation="-0.3159947159822619" start="26" duration="13" />
-                <frame x="126.05" y="208.55" scalex="1" scaley="1" centerx="17" centery="13.5" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="126.05" y="126.05" scale="1,1" center="17,13.5" rotation="0" />
+                </frame>
+                <frame drawable="0" start="10" duration="4">
+                    <position x="137.59662780761718" y="137.59662780761718" scale="0.9994659423828125,0.999481201171875" center="17.1,13.55" rotation="-0.42346998793685187" />
+                </frame>
+                <frame drawable="0" start="14" duration="2">
+                    <position x="145.5971267700195" y="145.5971267700195" scale="0.998260498046875,0.998260498046875" center="17.2,13.5" rotation="-0.8395968499589601" />
+                </frame>
+                <frame drawable="0" start="16" duration="3">
+                    <position x="145.5971267700195" y="145.5971267700195" scale="0.998260498046875,0.998260498046875" center="17.2,13.5" rotation="-0.8395968499589601" />
+                </frame>
+                <frame drawable="0" start="19" duration="3">
+                    <position x="96.60477600097656" y="96.60477600097656" scale="0.998260498046875,0.998260498046875" center="17.1,13.6" rotation="-0.8395968499589601" />
+                </frame>
+                <frame drawable="0" start="22" duration="4">
+                    <position x="99.08918304443358" y="99.08918304443358" scale="0.9976806640625,0.9976806640625" center="17.15,13.55" rotation="-0.13635982100853497" />
+                </frame>
+                <frame drawable="0" start="26" duration="13">
+                    <position x="99.07863159179689" y="99.07863159179689" scale="0.9982452392578125,0.998260498046875" center="17.1,13.55" rotation="-0.31600324121806955" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="126.05" y="126.05" scale="1,1" center="17,13.5" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_head1">
-            <library>
-                <item name="部件/元件 16" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 16" index="15" />
+            </drawable>
             <frames>
-                <frame x="146.05" y="222.9" scalex="1" scaley="1" centerx="80.5" centery="62.5" rotation="0" start="0" duration="10" />
-                <frame x="162.25" y="154.6" scalex="0.9996795654296875" scaley="0.9996795654296875" centerx="80.5" centery="62.45" rotation="0.3538520835099563" start="10" duration="4" />
-                <frame x="177.25" y="121.55" scalex="0.9997100830078125" scaley="0.9997100830078125" centerx="80.35" centery="62.4" rotation="0.09203964622146549" start="14" duration="2" />
-                <frame x="177.25" y="121.55" scalex="0.9997100830078125" scaley="0.9997100830078125" centerx="80.35" centery="62.4" rotation="0.09203964622146549" start="16" duration="3" />
-                <frame x="123.3" y="259.6" scalex="0.9997100830078125" scaley="0.9997100830078125" centerx="80.45" centery="62.5" rotation="0.6156429491936175" start="19" duration="3" />
-                <frame x="123.3" y="264.9" scalex="0.9983062744140625" scaley="0.998321533203125" centerx="80.45" centery="62.4" rotation="0.24114044827507775" start="22" duration="4" />
-                <frame x="123.25" y="272.1" scalex="0.999725341796875" scaley="0.9997100830078125" centerx="80.45" centery="62.45" rotation="0.3538385013883969" start="26" duration="13" />
-                <frame x="146.05" y="222.9" scalex="1" scaley="1" centerx="80.5" centery="62.5" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="146.05" y="146.05" scale="1,1" center="80.5,62.5" rotation="0" />
+                </frame>
+                <frame drawable="0" start="10" duration="4">
+                    <position x="162.30540924072267" y="162.30540924072267" scale="0.9996795654296875,0.9996795654296875" center="80.5,62.45" rotation="0.35385426444398094" />
+                </frame>
+                <frame drawable="0" start="14" duration="2">
+                    <position x="177.20202713012696" y="177.20202713012696" scale="0.9997100830078125,0.9997100830078125" center="80.35,62.4" rotation="0.09204591355560812" />
+                </frame>
+                <frame drawable="0" start="16" duration="3">
+                    <position x="177.20202713012696" y="177.20202713012696" scale="0.9997100830078125,0.9997100830078125" center="80.35,62.4" rotation="0.09204591355560812" />
+                </frame>
+                <frame drawable="0" start="19" duration="3">
+                    <position x="123.2789276123047" y="123.2789276123047" scale="0.9997100830078125,0.9997100830078125" center="80.45,62.5" rotation="0.6156451156827658" />
+                </frame>
+                <frame drawable="0" start="22" duration="4">
+                    <position x="123.31235580444337" y="123.31235580444337" scale="0.9983062744140625,0.998321533203125" center="80.45,62.4" rotation="0.24114176750211405" />
+                </frame>
+                <frame drawable="0" start="26" duration="13">
+                    <position x="123.26288299560548" y="123.26288299560548" scale="0.999725341796875,0.9997100830078125" center="80.45,62.45" rotation="0.35384368653976855" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="146.05" y="146.05" scale="1,1" center="80.5,62.5" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_head2">
-            <library>
-                <item name="部件/元件 29" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 29" index="28" />
+            </drawable>
             <frames>
-                <frame x="149.55" y="232.05" scalex="0.9991455078125" scaley="0.9991455078125" centerx="75" centery="6.95" rotation="-0.15702184208383493" start="0" duration="10" />
-                <frame x="161.35" y="164.8" scalex="0.998626708984375" scaley="0.998626708984375" centerx="75.05" centery="6.95" rotation="0.26230725261902754" start="10" duration="4" />
-                <frame x="179.4" y="131.8" scalex="0.99859619140625" scaley="0.99859619140625" centerx="75" centery="6.85" rotation="0.0005187837803474356" start="14" duration="2" />
-                <frame x="179.4" y="131.8" scalex="0.99859619140625" scaley="0.99859619140625" centerx="75" centery="6.85" rotation="0.0005187837803474356" start="16" duration="3" />
-                <frame x="122.4" y="264.75" scalex="0.99859619140625" scaley="0.998626708984375" centerx="75.05" centery="6.8" rotation="-0.7848793796171009" start="19" duration="3" />
-                <frame x="122.4" y="270.2" scalex="0.996612548828125" scaley="0.9966583251953125" centerx="75.1" centery="6.75" rotation="0.10713231275116256" start="22" duration="4" />
-                <frame x="122.35" y="280.2" scalex="0.9965972900390625" scaley="0.996612548828125" centerx="75.05" centery="6.8" rotation="0.1491226399745509" start="26" duration="13" />
-                <frame x="149.55" y="232.05" scalex="0.9991455078125" scaley="0.9991455078125" centerx="75" centery="6.95" rotation="-0.15702184208383493" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="149.59945678710938" y="149.59945678710938" scale="0.9991455078125,0.9991455078125" center="75,6.95" rotation="-0.15702902177083314" />
+                </frame>
+                <frame drawable="0" start="10" duration="4">
+                    <position x="161.38314361572264" y="161.38314361572264" scale="0.998626708984375,0.998626708984375" center="75.05,6.95" rotation="0.2623120542610236" />
+                </frame>
+                <frame drawable="0" start="14" duration="2">
+                    <position x="179.3911605834961" y="179.3911605834961" scale="0.99859619140625,0.99859619140625" center="75,6.85" rotation="0.0005195280995311276" />
+                </frame>
+                <frame drawable="0" start="16" duration="3">
+                    <position x="179.3911605834961" y="179.3911605834961" scale="0.99859619140625,0.99859619140625" center="75,6.85" rotation="0.0005195280995311276" />
+                </frame>
+                <frame drawable="0" start="19" duration="3">
+                    <position x="122.37077331542969" y="122.37077331542969" scale="0.99859619140625,0.998626708984375" center="75.05,6.8" rotation="-0.7848795360777102" />
+                </frame>
+                <frame drawable="0" start="22" duration="4">
+                    <position x="122.39654693603515" y="122.39654693603515" scale="0.996612548828125,0.9966583251953125" center="75.1,6.75" rotation="0.10713529334159169" />
+                </frame>
+                <frame drawable="0" start="26" duration="13">
+                    <position x="122.35634689331053" y="122.35634689331053" scale="0.9965972900390625,0.996612548828125" center="75.05,6.8" rotation="0.1491314583872368" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="149.59945678710938" y="149.59945678710938" scale="0.9991455078125,0.9991455078125" center="75,6.95" rotation="-0.15702902177083314" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_neck4">
-            <library>
-                <item name="部件/元件 1" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 1" index="0" />
+            </drawable>
             <frames>
-                <frame x="178.65" y="204.45" scalex="0.9982147216796875" scaley="0.9982147216796875" centerx="41.9" centery="47.6" rotation="-0.756513784530558" start="0" duration="10" />
-                <frame x="199.65" y="139.45" scalex="0.99822998046875" scaley="0.9982147216796875" centerx="41.85" centery="47.5" rotation="-0.49471466304751743" start="10" duration="4" />
-                <frame x="216.65" y="109.45" scalex="0.99822998046875" scaley="0.9982147216796875" centerx="41.9" centery="47.55" rotation="-0.49471466304751743" start="14" duration="2" />
-                <frame x="216.65" y="109.45" scalex="0.99822998046875" scaley="0.9982147216796875" centerx="41.9" centery="47.55" rotation="-0.49471466304751743" start="16" duration="3" />
-                <frame x="153.65" y="249.45" scalex="0.99822998046875" scaley="0.9982147216796875" centerx="41.9" centery="47.6" rotation="-0.49471466304751743" start="19" duration="7" />
-                <frame x="154.5" y="260.35" scalex="0.9980621337890625" scaley="0.9980621337890625" centerx="41.95" centery="47.5" rotation="-0.5434816699807214" start="26" duration="13" />
-                <frame x="178.65" y="204.45" scalex="0.9982147216796875" scaley="0.9982147216796875" centerx="41.9" centery="47.6" rotation="-0.756513784530558" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="178.68135528564454" y="178.68135528564454" scale="0.9982147216796875,0.9982147216796875" center="41.9,47.6" rotation="-0.7565128412626047" />
+                </frame>
+                <frame drawable="0" start="10" duration="4">
+                    <position x="199.578955078125" y="199.578955078125" scale="0.99822998046875,0.9982147216796875" center="41.85,47.5" rotation="-0.4947157696393969" />
+                </frame>
+                <frame drawable="0" start="14" duration="2">
+                    <position x="216.6465789794922" y="216.6465789794922" scale="0.99822998046875,0.9982147216796875" center="41.9,47.55" rotation="-0.4947157696393969" />
+                </frame>
+                <frame drawable="0" start="16" duration="3">
+                    <position x="216.6465789794922" y="216.6465789794922" scale="0.99822998046875,0.9982147216796875" center="41.9,47.55" rotation="-0.4947157696393969" />
+                </frame>
+                <frame drawable="0" start="19" duration="7">
+                    <position x="153.67027587890624" y="153.67027587890624" scale="0.99822998046875,0.9982147216796875" center="41.9,47.6" rotation="-0.4947157696393969" />
+                </frame>
+                <frame drawable="0" start="26" duration="13">
+                    <position x="154.50108642578127" y="154.50108642578127" scale="0.9980621337890625,0.9980621337890625" center="41.95,47.5" rotation="-0.5434819566109925" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="178.68135528564454" y="178.68135528564454" scale="0.9982147216796875,0.9982147216796875" center="41.9,47.6" rotation="-0.7565128412626047" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_neck3">
-            <library>
-                <item name="部件/元件 2" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 2" index="1" />
+            </drawable>
             <frames>
-                <frame x="213.5" y="187.85" scalex="0.999420166015625" scaley="0.999420166015625" centerx="39.55" centery="50.45" rotation="-0.8673026174583992" start="0" duration="10" />
-                <frame x="235.55" y="140.9" scalex="0.9994354248046875" scaley="0.9994354248046875" centerx="39.65" centery="50.5" rotation="-0.34369079237075895" start="10" duration="4" />
-                <frame x="245.55" y="127.95" scalex="0.9980926513671875" scaley="0.99810791015625" centerx="39.6" centery="50.45" rotation="0.10236312387104865" start="14" duration="2" />
-                <frame x="245.55" y="127.95" scalex="0.9980926513671875" scaley="0.99810791015625" centerx="39.6" centery="50.45" rotation="0.10236312387104865" start="16" duration="3" />
-                <frame x="186.55" y="239.95" scalex="0.9980621337890625" scaley="0.998077392578125" centerx="39.5" centery="50.5" rotation="-0.6830310447847645" start="19" duration="7" />
-                <frame x="186.9" y="249.25" scalex="0.997894287109375" scaley="0.9979400634765625" centerx="39.55" centery="50.45" rotation="-0.7318073727817838" start="26" duration="13" />
-                <frame x="213.5" y="187.85" scalex="0.999420166015625" scaley="0.999420166015625" centerx="39.55" centery="50.45" rotation="-0.8673026174583992" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="213.4699295043945" y="213.4699295043945" scale="0.999420166015625,0.999420166015625" center="39.55,50.45" rotation="-0.8673003718620644" />
+                </frame>
+                <frame drawable="0" start="10" duration="4">
+                    <position x="235.56781311035155" y="235.56781311035155" scale="0.9994354248046875,0.9994354248046875" center="39.65,50.5" rotation="-0.3436956002749041" />
+                </frame>
+                <frame drawable="0" start="14" duration="2">
+                    <position x="245.57122497558595" y="245.57122497558595" scale="0.9980926513671875,0.99810791015625" center="39.6,50.45" rotation="0.10236582281435772" />
+                </frame>
+                <frame drawable="0" start="16" duration="3">
+                    <position x="245.57122497558595" y="245.57122497558595" scale="0.9980926513671875,0.99810791015625" center="39.6,50.45" rotation="0.10236582281435772" />
+                </frame>
+                <frame drawable="0" start="19" duration="7">
+                    <position x="186.54127349853516" y="186.54127349853516" scale="0.9980621337890625,0.998077392578125" center="39.5,50.5" rotation="-0.6830381298448649" />
+                </frame>
+                <frame drawable="0" start="26" duration="13">
+                    <position x="186.90402221679688" y="186.90402221679688" scale="0.997894287109375,0.9979400634765625" center="39.55,50.45" rotation="-0.7318081008539313" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="213.4699295043945" y="213.4699295043945" scale="0.999420166015625,0.999420166015625" center="39.55,50.45" rotation="-0.8673003718620644" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_neck2">
-            <library>
-                <item name="部件/元件 3" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 3" index="2" />
+            </drawable>
             <frames>
-                <frame x="255.95" y="197.95" scalex="0.9996337890625" scaley="0.9996337890625" centerx="48.5" centery="55" rotation="-0.3759941374450931" start="0" duration="10" />
-                <frame x="273" y="161" scalex="0.9996337890625" scaley="0.9996337890625" centerx="48.6" centery="55.05" rotation="-0.11417104751224197" start="10" duration="4" />
-                <frame x="278" y="156" scalex="0.9990386962890625" scaley="0.9990234375" centerx="48.55" centery="55.05" rotation="0.07361243569088022" start="14" duration="2" />
-                <frame x="278" y="156" scalex="0.9990386962890625" scaley="0.9990234375" centerx="48.55" centery="55.05" rotation="0.07361243569088022" start="16" duration="3" />
-                <frame x="228" y="235" scalex="0.9990386962890625" scaley="0.9990081787109375" centerx="48.55" centery="55" rotation="-0.7117764066427528" start="19" duration="3" />
-                <frame x="228.05" y="238.75" scalex="0.997314453125" scaley="0.997314453125" centerx="48.5" centery="55.1" rotation="-0.7311314624971217" start="22" duration="4" />
-                <frame x="228.1" y="243.8" scalex="0.9988555908203125" scaley="0.9988555908203125" centerx="48.55" centery="54.95" rotation="-0.760549805162573" start="26" duration="13" />
-                <frame x="255.95" y="197.95" scalex="0.9996337890625" scaley="0.9996337890625" centerx="48.5" centery="55" rotation="-0.3759941374450931" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="255.93362274169922" y="255.93362274169922" scale="0.9996337890625,0.9996337890625" center="48.5,55" rotation="-0.37599943883412795" />
+                </frame>
+                <frame drawable="0" start="10" duration="4">
+                    <position x="273.0345397949219" y="273.0345397949219" scale="0.9996337890625,0.9996337890625" center="48.6,55.05" rotation="-0.11418372285591294" />
+                </frame>
+                <frame drawable="0" start="14" duration="2">
+                    <position x="277.9768814086914" y="277.9768814086914" scale="0.9990386962890625,0.9990234375" center="48.55,55.05" rotation="0.07362424530436636" />
+                </frame>
+                <frame drawable="0" start="16" duration="3">
+                    <position x="277.9768814086914" y="277.9768814086914" scale="0.9990386962890625,0.9990234375" center="48.55,55.05" rotation="0.07362424530436636" />
+                </frame>
+                <frame drawable="0" start="19" duration="3">
+                    <position x="227.9655822753906" y="227.9655822753906" scale="0.9990386962890625,0.9990081787109375" center="48.55,55" rotation="-0.7117838355037749" />
+                </frame>
+                <frame drawable="0" start="22" duration="4">
+                    <position x="228.0479293823242" y="228.0479293823242" scale="0.997314453125,0.997314453125" center="48.5,55.1" rotation="-0.7311376860592854" />
+                </frame>
+                <frame drawable="0" start="26" duration="13">
+                    <position x="228.06667556762693" y="228.06667556762693" scale="0.9988555908203125,0.9988555908203125" center="48.55,54.95" rotation="-0.7605513091546996" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="255.93362274169922" y="255.93362274169922" scale="0.9996337890625,0.9996337890625" center="48.5,55" rotation="-0.37599943883412795" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_neck1">
-            <library>
-                <item name="部件/元件 4" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 4" index="3" />
+            </drawable>
             <frames>
-                <frame x="276.95" y="219.9" scalex="1" scaley="1" centerx="39" centery="54" rotation="0" start="0" duration="10" />
-                <frame x="287.95" y="187.9" scalex="1" scaley="1" centerx="39" centery="54.05" rotation="0.2617948604252963" start="10" duration="4" />
-                <frame x="287.95" y="187.9" scalex="0.9995574951171875" scaley="0.9995574951171875" centerx="38.95" centery="54.05" rotation="0.4016920440677037" start="14" duration="2" />
-                <frame x="287.95" y="187.9" scalex="0.9995574951171875" scaley="0.9995574951171875" centerx="38.95" centery="54.05" rotation="0.4016920440677037" start="16" duration="3" />
-                <frame x="258.95" y="239.95" scalex="0.9995574951171875" scaley="0.9995574951171875" centerx="38.95" centery="54" rotation="-0.6454796744663203" start="19" duration="7" />
-                <frame x="259.15" y="244.25" scalex="0.9991302490234375" scaley="0.9991302490234375" centerx="38.95" centery="53.9" rotation="-0.7737550894277309" start="26" duration="13" />
-                <frame x="276.95" y="219.9" scalex="1" scaley="1" centerx="39" centery="54" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="276.95" y="276.95" scale="1,1" center="39,54" rotation="0" />
+                </frame>
+                <frame drawable="0" start="10" duration="4">
+                    <position x="287.9819595336914" y="287.9819595336914" scale="1,1" center="39,54.05" rotation="0.2617995686672802" />
+                </frame>
+                <frame drawable="0" start="14" duration="2">
+                    <position x="287.96015625" y="287.96015625" scale="0.9995574951171875,0.9995574951171875" center="38.95,54.05" rotation="0.4017006489453867" />
+                </frame>
+                <frame drawable="0" start="16" duration="3">
+                    <position x="287.96015625" y="287.96015625" scale="0.9995574951171875,0.9995574951171875" center="38.95,54.05" rotation="0.4017006489453867" />
+                </frame>
+                <frame drawable="0" start="19" duration="7">
+                    <position x="258.9706886291504" y="258.9706886291504" scale="0.9995574951171875,0.9995574951171875" center="38.95,54" rotation="-0.6454886982280228" />
+                </frame>
+                <frame drawable="0" start="26" duration="13">
+                    <position x="259.11964111328126" y="259.11964111328126" scale="0.9991302490234375,0.9991302490234375" center="38.95,53.9" rotation="-0.7737564663173698" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="276.95" y="276.95" scale="1,1" center="39,54" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_eyebrow_L">
-            <library>
-                <item name="部件/元件 12" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 12" index="11" />
+            </drawable>
             <frames>
-                <frame x="111.95" y="206.9" scalex="0.9996185302734375" scaley="0.9996185302734375" centerx="8.95" centery="16.55" rotation="-0.11817537652728512" start="0" duration="10" />
-                <frame x="127" y="143.9" scalex="0.9996185302734375" scaley="0.9996185302734375" centerx="8.95" centery="16.55" rotation="-0.903561822015937" start="10" duration="4" />
-                <frame x="138" y="118.9" scalex="0.9996337890625" scaley="0.9996337890625" centerx="9" centery="16.55" rotation="-1.1653614761311955" start="14" duration="2" />
-                <frame x="138" y="118.9" scalex="0.9996337890625" scaley="0.9996337890625" centerx="9" centery="16.55" rotation="-1.1653614761311955" start="16" duration="3" />
-                <frame x="90" y="241.9" scalex="0.9996337890625" scaley="0.9996337890625" centerx="9.05" centery="16.55" rotation="-1.1653614761311955" start="19" duration="3" />
-                <frame x="83.55" y="260.4" scalex="0.9980926513671875" scaley="0.9980926513671875" centerx="9.05" centery="16.5" rotation="-0.5610867626827993" start="22" duration="4" />
-                <frame x="83.6" y="260.4" scalex="0.9978485107421875" scaley="0.9978485107421875" centerx="9.1" centery="16.5" rotation="-0.6403190009059646" start="26" duration="13" />
-                <frame x="112.05" y="206.9" scalex="0.9996490478515625" scaley="0.9996490478515625" centerx="8.95" centery="16.5" rotation="-0.11816046282518067" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="112.02859497070312" y="112.02859497070312" scale="0.9996490478515625,0.9996490478515625" center="8.95,16.5" rotation="-0.1181637093785822" />
+                </frame>
+                <frame drawable="0" start="10" duration="4">
+                    <position x="126.98160171508789" y="126.98160171508789" scale="0.9996185302734375,0.9996185302734375" center="8.95,16.55" rotation="-0.9035530507573627" />
+                </frame>
+                <frame drawable="0" start="14" duration="2">
+                    <position x="138.0009307861328" y="138.0009307861328" scale="0.9996337890625,0.9996337890625" center="9,16.55" rotation="-1.1653573553612744" />
+                </frame>
+                <frame drawable="0" start="16" duration="3">
+                    <position x="138.0009307861328" y="138.0009307861328" scale="0.9996337890625,0.9996337890625" center="9,16.55" rotation="-1.1653573553612744" />
+                </frame>
+                <frame drawable="0" start="19" duration="3">
+                    <position x="90.02064437866211" y="90.02064437866211" scale="0.9996337890625,0.9996337890625" center="9.05,16.55" rotation="-1.1653573553612744" />
+                </frame>
+                <frame drawable="0" start="22" duration="4">
+                    <position x="83.56092071533203" y="83.56092071533203" scale="0.9980926513671875,0.9980926513671875" center="9.05,16.5" rotation="-0.5610916694326215" />
+                </frame>
+                <frame drawable="0" start="26" duration="13">
+                    <position x="83.61820983886719" y="83.61820983886719" scale="0.9978485107421875,0.9978485107421875" center="9.1,16.5" rotation="-0.6403203995759196" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="112.02859497070312" y="112.02859497070312" scale="0.9996490478515625,0.9996490478515625" center="8.95,16.5" rotation="-0.1181637093785822" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_front_foot_R">
-            <library>
-                <item name="部件/元件 13" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 13" index="12" />
+            </drawable>
             <frames>
-                <frame x="295.2" y="312.35" scalex="1" scaley="1" centerx="39.5" centery="11.5" rotation="0" start="0" duration="39" />
-                <frame x="295.2" y="312.35" scalex="1" scaley="1" centerx="39.5" centery="11.5" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="39">
+                    <position x="295.2" y="295.2" scale="1,1" center="39.5,11.5" rotation="0" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="295.2" y="295.2" scale="1,1" center="39.5,11.5" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_front_leg_R2">
-            <library>
-                <item name="部件/元件 7" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 7" index="6" />
+            </drawable>
             <frames>
-                <frame x="325.6" y="276.45" scalex="1" scaley="1" centerx="31.5" centery="41" rotation="0" start="0" duration="10" />
-                <frame x="311.6" y="266.45" scalex="0.998443603515625" scaley="0.998443603515625" centerx="31.6" centery="41" rotation="-0.35862340291894224" start="10" duration="6" />
-                <frame x="311.6" y="266.45" scalex="0.998443603515625" scaley="0.998443603515625" centerx="31.6" centery="41" rotation="-0.35862340291894224" start="16" duration="3" />
-                <frame x="323.65" y="275.5" scalex="0.9966583251953125" scaley="0.9966583251953125" centerx="31.6" centery="41.05" rotation="-0.012038553391594188" start="19" duration="7" />
-                <frame x="324.65" y="280.5" scalex="0.9962921142578125" scaley="0.9962921142578125" centerx="31.65" centery="41.05" rotation="0.09347668794567225" start="26" duration="13" />
-                <frame x="325.6" y="276.45" scalex="1" scaley="1" centerx="31.5" centery="41" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="325.6" y="325.6" scale="1,1" center="31.5,41" rotation="0" />
+                </frame>
+                <frame drawable="0" start="10" duration="6">
+                    <position x="311.6123870849609" y="311.6123870849609" scale="0.998443603515625,0.998443603515625" center="31.6,41" rotation="-0.3586275772807804" />
+                </frame>
+                <frame drawable="0" start="16" duration="3">
+                    <position x="311.6123870849609" y="311.6123870849609" scale="0.998443603515625,0.998443603515625" center="31.6,41" rotation="-0.3586275772807804" />
+                </frame>
+                <frame drawable="0" start="19" duration="7">
+                    <position x="323.6344657897949" y="323.6344657897949" scale="0.9966583251953125,0.9966583251953125" center="31.6,41.05" rotation="-0.012049454328138316" />
+                </frame>
+                <frame drawable="0" start="26" duration="13">
+                    <position x="324.6772621154785" y="324.6772621154785" scale="0.9962921142578125,0.9962921142578125" center="31.65,41.05" rotation="0.09348440550331268" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="325.6" y="325.6" scale="1,1" center="31.5,41" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_front_leg_R1">
-            <library>
-                <item name="部件/元件 5" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 5" index="4" />
+            </drawable>
             <frames>
-                <frame x="304.95" y="237.05" scalex="1" scaley="1" centerx="9.5" centery="8" rotation="0" start="0" duration="10" />
-                <frame x="311" y="217.1" scalex="1" scaley="1" centerx="9.55" centery="7.95" rotation="0.5235966450694268" start="10" duration="6" />
-                <frame x="311" y="217.1" scalex="1" scaley="1" centerx="9.55" centery="7.95" rotation="0.5235966450694268" start="16" duration="3" />
-                <frame x="295.95" y="245.2" scalex="1" scaley="1" centerx="9.35" centery="7.95" rotation="-0.26176636460163244" start="19" duration="7" />
-                <frame x="295.95" y="249.2" scalex="1" scaley="1" centerx="9.35" centery="7.9" rotation="-0.26176636460163244" start="26" duration="13" />
-                <frame x="304.95" y="237.05" scalex="1" scaley="1" centerx="9.5" centery="8" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="304.95" y="304.95" scale="1,1" center="9.5,8" rotation="0" />
+                </frame>
+                <frame drawable="0" start="10" duration="6">
+                    <position x="311.0455657958984" y="311.0455657958984" scale="1,1" center="9.55,7.95" rotation="0.5235975614774464" />
+                </frame>
+                <frame drawable="0" start="16" duration="3">
+                    <position x="311.0455657958984" y="311.0455657958984" scale="1,1" center="9.55,7.95" rotation="0.5235975614774464" />
+                </frame>
+                <frame drawable="0" start="19" duration="7">
+                    <position x="295.93903427124025" y="295.93903427124025" scale="1,1" center="9.35,7.95" rotation="-0.2617700907600508" />
+                </frame>
+                <frame drawable="0" start="26" duration="13">
+                    <position x="295.9260932922364" y="295.9260932922364" scale="1,1" center="9.35,7.9" rotation="-0.2617700907600508" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="304.95" y="304.95" scale="1,1" center="9.5,8" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_hind_foot_R">
-            <library>
-                <item name="部件/元件 9" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 9" index="8" />
+            </drawable>
             <frames>
-                <frame x="416.95" y="305.95" scalex="1" scaley="1" centerx="36.5" centery="5.75" rotation="0" start="0" duration="16" />
-                <frame x="416.95" y="305.95" scalex="1" scaley="1" centerx="36.5" centery="5.75" rotation="0" start="16" duration="3" />
-                <frame x="434.95" y="304.95" scalex="1" scaley="1" centerx="36.5" centery="5.75" rotation="0" start="19" duration="7" />
-                <frame x="434.95" y="304.95" scalex="1" scaley="1" centerx="36.5" centery="5.75" rotation="0" start="26" duration="13" />
-                <frame x="416.95" y="305.95" scalex="1" scaley="1" centerx="36.5" centery="5.75" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="16">
+                    <position x="416.95" y="416.95" scale="1,1" center="36.5,5.75" rotation="0" />
+                </frame>
+                <frame drawable="0" start="16" duration="3">
+                    <position x="416.95" y="416.95" scale="1,1" center="36.5,5.75" rotation="0" />
+                </frame>
+                <frame drawable="0" start="19" duration="7">
+                    <position x="434.95" y="434.95" scale="1,1" center="36.5,5.75" rotation="0" />
+                </frame>
+                <frame drawable="0" start="26" duration="13">
+                    <position x="434.95" y="434.95" scale="1,1" center="36.5,5.75" rotation="0" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="416.95" y="416.95" scale="1,1" center="36.5,5.75" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_hind_leg_R1">
-            <library>
-                <item name="部件/元件 17" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 17" index="16" />
+            </drawable>
             <frames>
-                <frame x="387.4" y="247.6" scalex="1" scaley="1" centerx="24.5" centery="16" rotation="0" start="0" duration="10" />
-                <frame x="387.4" y="247.6" scalex="0.99957275390625" scaley="0.99957275390625" centerx="24.5" centery="16" rotation="0.13535196660996918" start="10" duration="6" />
-                <frame x="387.4" y="247.6" scalex="0.99957275390625" scaley="0.99957275390625" centerx="24.5" centery="16" rotation="0.13535196660996918" start="16" duration="3" />
-                <frame x="377.4" y="233.1" scalex="0.9996490478515625" scaley="0.9996490478515625" centerx="24.45" centery="16.1" rotation="0.14807814819502182" start="19" duration="7" />
-                <frame x="377.4" y="231.6" scalex="0.9996490478515625" scaley="0.9996490478515625" centerx="24.5" centery="16.1" rotation="0.14807814819502182" start="26" duration="13" />
-                <frame x="387.4" y="247.6" scalex="1" scaley="1" centerx="24.5" centery="16" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="387.4" y="387.4" scale="1,1" center="24.5,16" rotation="0" />
+                </frame>
+                <frame drawable="0" start="10" duration="6">
+                    <position x="387.3570251464844" y="387.3570251464844" scale="0.99957275390625,0.99957275390625" center="24.5,16" rotation="0.1353599582833806" />
+                </frame>
+                <frame drawable="0" start="16" duration="3">
+                    <position x="387.3570251464844" y="387.3570251464844" scale="0.99957275390625,0.99957275390625" center="24.5,16" rotation="0.1353599582833806" />
+                </frame>
+                <frame drawable="0" start="19" duration="7">
+                    <position x="377.3485641479492" y="377.3485641479492" scale="0.9996490478515625,0.9996490478515625" center="24.45,16.1" rotation="0.1480883645410619" />
+                </frame>
+                <frame drawable="0" start="26" duration="13">
+                    <position x="377.397998046875" y="377.397998046875" scale="0.9996490478515625,0.9996490478515625" center="24.5,16.1" rotation="0.1480883645410619" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="387.4" y="387.4" scale="1,1" center="24.5,16" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_hind_leg_R2">
-            <library>
-                <item name="部件/元件 19" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 19" index="18" />
+            </drawable>
             <frames>
-                <frame x="438" y="275.4" scalex="1" scaley="1" centerx="24" centery="7.5" rotation="0" start="0" duration="10" />
-                <frame x="434.5" y="284.15" scalex="1" scaley="0.7706146240234375" centerx="24" centery="7.5" rotation="0" start="10" duration="6" />
-                <frame x="434.5" y="284.15" scalex="1" scaley="0.7706146240234375" centerx="24" centery="7.5" rotation="0" start="16" duration="3" />
-                <frame x="422.25" y="267.35" scalex="0.9988250732421875" scaley="0.9988250732421875" centerx="23.95" centery="7.45" rotation="-0.9308701421497186" start="19" duration="7" />
-                <frame x="422.25" y="267.35" scalex="0.9988250732421875" scaley="0.9988250732421875" centerx="23.95" centery="7.45" rotation="-0.9308701421497186" start="26" duration="13" />
-                <frame x="438" y="275.4" scalex="1" scaley="1" centerx="24" centery="7.5" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="438" y="438" scale="1,1" center="24,7.5" rotation="0" />
+                </frame>
+                <frame drawable="0" start="10" duration="6">
+                    <position x="434.5" y="434.5" scale="1,0.7706146240234375" center="24,7.5" rotation="0" />
+                </frame>
+                <frame drawable="0" start="16" duration="3">
+                    <position x="434.5" y="434.5" scale="1,0.7706146240234375" center="24,7.5" rotation="0" />
+                </frame>
+                <frame drawable="0" start="19" duration="7">
+                    <position x="422.2535209655762" y="422.2535209655762" scale="0.9988250732421875,0.9988250732421875" center="23.95,7.45" rotation="-0.9308669369221771" />
+                </frame>
+                <frame drawable="0" start="26" duration="13">
+                    <position x="422.2535209655762" y="422.2535209655762" scale="0.9988250732421875,0.9988250732421875" center="23.95,7.45" rotation="-0.9308669369221771" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="438" y="438" scale="1,1" center="24,7.5" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_tail">
-            <library>
-                <item name="尾巴" />
-            </library>
+            <drawable>
+                <refer name="尾巴" index="29" />
+            </drawable>
             <frames>
-                <frame x="424.45" y="242.6" scalex="1" scaley="1" centerx="20.45" centery="53.55" rotation="0" start="0" duration="10" />
-                <frame x="424.45" y="247.6" scalex="0.9996185302734375" scaley="0.9996185302734375" centerx="20.45" centery="53.55" rotation="0.11409594636950174" start="10" duration="4" />
-                <frame x="424.45" y="249.6" scalex="0.9996185302734375" scaley="0.9996185302734375" centerx="20.5" centery="53.5" rotation="0.11409594636950174" start="14" duration="2" />
-                <frame x="424.45" y="249.6" scalex="0.9996185302734375" scaley="0.9996185302734375" centerx="20.5" centery="53.5" rotation="0.11409594636950174" start="16" duration="3" />
-                <frame x="409.95" y="216.6" scalex="0.998748779296875" scaley="0.998748779296875" centerx="20.4" centery="53.5" rotation="-0.17894285364849516" start="19" duration="7" />
-                <frame x="407.95" y="215.1" scalex="0.499664306640625" scaley="0.9979248046875" centerx="20.45" centery="53.55" rotation="-0.20980303172811535" start="26" duration="13" />
-                <frame x="424.45" y="242.6" scalex="1" scaley="1" centerx="20.45" centery="53.55" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="424.45" y="424.45" scale="1,1" center="20.45,53.55" rotation="0" />
+                </frame>
+                <frame drawable="0" start="10" duration="4">
+                    <position x="424.4141471862793" y="424.4141471862793" scale="0.9996185302734375,0.9996185302734375" center="20.45,53.55" rotation="0.11410789567697743" />
+                </frame>
+                <frame drawable="0" start="14" duration="2">
+                    <position x="424.46949310302733" y="424.46949310302733" scale="0.9996185302734375,0.9996185302734375" center="20.5,53.5" rotation="0.11410789567697743" />
+                </frame>
+                <frame drawable="0" start="16" duration="3">
+                    <position x="424.46949310302733" y="424.46949310302733" scale="0.9996185302734375,0.9996185302734375" center="20.5,53.5" rotation="0.11410789567697743" />
+                </frame>
+                <frame drawable="0" start="19" duration="7">
+                    <position x="409.90898742675785" y="409.90898742675785" scale="0.998748779296875,0.998748779296875" center="20.4,53.5" rotation="-0.1789461197876851" />
+                </frame>
+                <frame drawable="0" start="26" duration="13">
+                    <position x="407.9296813964844" y="407.9296813964844" scale="0.99859619140625,0.99859619140625" center="20.4,53.5" rotation="-0.21040176744853925" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="424.45" y="424.45" scale="1,1" center="20.45,53.55" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_body">
-            <library>
-                <item name="部件/元件 15" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 15" index="14" />
+            </drawable>
             <frames>
-                <frame x="378.45" y="253.05" scalex="1" scaley="1" centerx="116" centery="73" rotation="0" start="0" duration="10" />
-                <frame x="378.45" y="247.05" scalex="0.9990081787109375" scaley="0.9990081787109375" centerx="115.95" centery="72.95" rotation="0.3020227076392702" start="10" duration="4" />
-                <frame x="377.95" y="249.05" scalex="0.9986724853515625" scaley="0.9986724853515625" centerx="116.05" centery="72.95" rotation="0.3407253624969558" start="14" duration="2" />
-                <frame x="377.95" y="249.05" scalex="0.9986724853515625" scaley="0.9986724853515625" centerx="116.05" centery="72.95" rotation="0.3407253624969558" start="16" duration="3" />
-                <frame x="367.45" y="239.1" scalex="0.9968719482421875" scaley="0.9968719482421875" centerx="116" centery="73.05" rotation="-0.26670013683711324" start="19" duration="7" />
-                <frame x="367.45" y="238.15" scalex="0.99664306640625" scaley="0.99664306640625" centerx="115.85" centery="73.15" rotation="-0.328870034588359" start="26" duration="13" />
-                <frame x="378.45" y="253.05" scalex="1" scaley="1" centerx="116" centery="73" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="378.45" y="378.45" scale="1,1" center="116,73" rotation="0" />
+                </frame>
+                <frame drawable="0" start="10" duration="4">
+                    <position x="378.414510345459" y="378.414510345459" scale="0.9990081787109375,0.9990081787109375" center="115.95,72.95" rotation="0.30202837889827105" />
+                </frame>
+                <frame drawable="0" start="14" duration="2">
+                    <position x="377.9872505187989" y="377.9872505187989" scale="0.9986724853515625,0.9986724853515625" center="116.05,72.95" rotation="0.34072580035153366" />
+                </frame>
+                <frame drawable="0" start="16" duration="3">
+                    <position x="377.9872505187989" y="377.9872505187989" scale="0.9986724853515625,0.9986724853515625" center="116.05,72.95" rotation="0.34072580035153366" />
+                </frame>
+                <frame drawable="0" start="19" duration="7">
+                    <position x="367.43875274658205" y="367.43875274658205" scale="0.9968719482421875,0.9968719482421875" center="116,73.05" rotation="-0.26670581713960717" />
+                </frame>
+                <frame drawable="0" start="26" duration="13">
+                    <position x="367.3692161560059" y="367.3692161560059" scale="0.99664306640625,0.99664306640625" center="115.85,73.15" rotation="-0.3288821894112315" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="378.45" y="378.45" scale="1,1" center="116,73" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_front_foot_L">
-            <library>
-                <item name="部件/元件 14" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 14" index="13" />
+            </drawable>
             <frames>
-                <frame x="276.5" y="295.85" scalex="1" scaley="1" centerx="38" centery="8" rotation="0" start="0" duration="39" />
-                <frame x="276.5" y="295.85" scalex="1" scaley="1" centerx="38" centery="8" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="39">
+                    <position x="276.5" y="276.5" scale="1,1" center="38,8" rotation="0" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="276.5" y="276.5" scale="1,1" center="38,8" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_front_leg_L2">
-            <library>
-                <item name="部件/元件 8" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 8" index="7" />
+            </drawable>
             <frames>
-                <frame x="305.5" y="259.35" scalex="1" scaley="1" centerx="31" centery="47.5" rotation="0" start="0" duration="10" />
-                <frame x="296" y="253.85" scalex="1" scaley="1" centerx="30.95" centery="47.45" rotation="-0.2617948604252963" start="10" duration="6" />
-                <frame x="296" y="253.85" scalex="1" scaley="1" centerx="30.95" centery="47.45" rotation="-0.2617948604252963" start="16" duration="23" />
-                <frame x="305.5" y="259.35" scalex="1" scaley="1" centerx="31" centery="47.5" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="305.5" y="305.5" scale="1,1" center="31,47.5" rotation="0" />
+                </frame>
+                <frame drawable="0" start="10" duration="6">
+                    <position x="295.97643356323243" y="295.97643356323243" scale="1,1" center="30.95,47.45" rotation="-0.2617995686672802" />
+                </frame>
+                <frame drawable="0" start="16" duration="23">
+                    <position x="295.97643356323243" y="295.97643356323243" scale="1,1" center="30.95,47.45" rotation="-0.2617995686672802" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="305.5" y="305.5" scale="1,1" center="31,47.5" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_front_leg_L1">
-            <library>
-                <item name="部件/元件 6" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 6" index="5" />
+            </drawable>
             <frames>
-                <frame x="291.35" y="223.85" scalex="1" scaley="1" centerx="9" centery="7" rotation="0" start="0" duration="10" />
-                <frame x="290.35" y="211.85" scalex="1" scaley="1" centerx="9" centery="7" rotation="0.2617948604252963" start="10" duration="6" />
-                <frame x="290.35" y="211.85" scalex="1" scaley="1" centerx="9" centery="7" rotation="0.2617948604252963" start="16" duration="23" />
-                <frame x="291.35" y="223.85" scalex="1" scaley="1" centerx="9" centery="7" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="10">
+                    <position x="291.35" y="291.35" scale="1,1" center="9,7" rotation="0" />
+                </frame>
+                <frame drawable="0" start="10" duration="6">
+                    <position x="290.38160705566406" y="290.38160705566406" scale="1,1" center="9,7" rotation="0.2617995686672802" />
+                </frame>
+                <frame drawable="0" start="16" duration="23">
+                    <position x="290.38160705566406" y="290.38160705566406" scale="1,1" center="9,7" rotation="0.2617995686672802" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="291.35" y="291.35" scale="1,1" center="9,7" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_hind_foot_L">
-            <library>
-                <item name="部件/元件 10" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 10" index="9" />
+            </drawable>
             <frames>
-                <frame x="391.35" y="290.35" scalex="1" scaley="1" centerx="39.5" centery="10" rotation="0" start="0" duration="39" />
-                <frame x="391.35" y="290.35" scalex="1" scaley="1" centerx="39.5" centery="10" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="39">
+                    <position x="391.35" y="391.35" scale="1,1" center="39.5,10" rotation="0" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="391.35" y="391.35" scale="1,1" center="39.5,10" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_hind_leg_L1">
-            <library>
-                <item name="部件/元件 18" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 18" index="17" />
+            </drawable>
             <frames>
-                <frame x="364.45" y="233.5" scalex="1" scaley="1" centerx="19" centery="10.65" rotation="0" start="0" duration="39" />
-                <frame x="364.45" y="233.5" scalex="1" scaley="1" centerx="19" centery="10.65" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="39">
+                    <position x="364.45" y="364.45" scale="1,1" center="19,10.65" rotation="0" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="364.45" y="364.45" scale="1,1" center="19,10.65" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="dragon_hind_leg_L2">
-            <library>
-                <item name="部件/元件 20" />
-            </library>
+            <drawable>
+                <refer name="部件/元件 20" index="19" />
+            </drawable>
             <frames>
-                <frame x="417.95" y="262.35" scalex="1" scaley="1" centerx="30.5" centery="7.5" rotation="0" start="0" duration="39" />
-                <frame x="417.95" y="262.35" scalex="1" scaley="1" centerx="30.5" centery="7.5" rotation="0" start="39" duration="1" />
+                <frame drawable="0" start="0" duration="39">
+                    <position x="417.95" y="417.95" scale="1,1" center="30.5,7.5" rotation="0" />
+                </frame>
+                <frame drawable="0" start="39" duration="1">
+                    <position x="417.95" y="417.95" scale="1,1" center="30.5,7.5" rotation="0" />
+                </frame>
             </frames>
         </layer>
         <layer name="shadow">
-            <library>
-                <item name="元件 98" />
-            </library>
+            <drawable>
+                <refer name="元件 98" index="30" />
+            </drawable>
             <frames>
-                <frame x="343.95" y="304.55" scalex="4.8839111328125" scaley="1.629730224609375" centerx="33" centery="19.5" rotation="0" start="0" duration="40" />
+                <frame drawable="0" start="0" duration="40">
+                    <position x="343.9695709228516" y="343.9695709228516" scale="4.8839263916015625,1.629730224609375" center="33,19.5" rotation="0" />
+                </frame>
             </frames>
         </layer>
-        <layer name="aabb">
-            <library>
-                <item name="场景1-800.jpg" />
-            </library>
+        <layer name="bg">
+            <drawable>
+                <refer name="场景1-800.jpg" index="35" />
+            </drawable>
             <frames>
-                <frame x="400" y="240" scalex="1" scaley="1" centerx="0" centery="0" rotation="0" start="0" duration="40" />
+                <frame drawable="0" start="0" duration="40">
+                    <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
+                </frame>
             </frames>
         </layer>
     </timeline>

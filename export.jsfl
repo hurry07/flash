@@ -40,8 +40,8 @@ function each(array, fn, bind) {
 }
 
 function Flash(library) {
-    this.loadLibrary(library);
     this.timelines = [];
+    this.loadLibrary(library);
 }
 Flash.prototype.loadLibrary = function (library) {
     var itemsmap = this.itemsmap = {};
@@ -62,8 +62,9 @@ Flash.prototype.createTimeline = function (timeline) {
 }
 Flash.prototype.exportXml = function () {
     var xml = new XML(0);
+
     xml.begin('flash');
-    for (var i = this.timelines.length - 1; i >= 0; i--) {
+    for (var i = 0, length = this.timelines.length; i < length; i++) {
         this.timelines[i].exportXml(xml);
     }
     xml.end();
@@ -71,7 +72,25 @@ Flash.prototype.exportXml = function () {
     this.saveXml(xml);
 }
 Flash.prototype.saveXml = function (xml) {
-    console.log(xml.buffer);
+    var URI = "file:///Users/jie/git/flash/text.txt";
+    if (FLfile.write(URI, xml.buffer)) {
+        console.log("Wrote xxx to " + URI);
+    }
+    /*
+     if (FLfile.write(URI, "aaa", "append")) {
+     console.log("Appended aaa to " + URI);
+     }
+     */
+}
+Flash.prototype.parse = function (timeline) {
+    // add default timeline
+    var t = new Timeline(this, timeline);
+    this.timelines.push(t);
+
+    // parse all timeline, including movieclip timeline
+    for (var i = 0, length = this.timelines.length; i < length; i++) {
+        this.timelines[i].parse();
+    }
 }
 
 /**
@@ -85,6 +104,7 @@ function Symbol(item) {
 }
 Symbol.prototype.parse = function (item) {
     this.library = item.libraryItem;
+    console.log(this.library + '&=========');
     switch (item.symbolType) {
         case 'movie clip':
             this.type = 'moveclip';
@@ -102,6 +122,7 @@ function Bitmap(item) {
 }
 Bitmap.prototype.parse = function (item) {
     this.library = item.libraryItem;
+    console.log(this.library + '<=========');
     switch (item.instanceType) {
         case 'bitmap':
             break;
@@ -168,7 +189,7 @@ Frame.prototype.parsePosition = function (element) {
     };
 }
 Frame.prototype.exportXml = function (xml) {
-    xml.inline('frame', this.position);
+    xml.inline('frame', this.position, {start: this.startFrame, duration: this.duration});
 }
 
 function Layer(layer) {
@@ -248,7 +269,7 @@ Timeline.prototype.parseLayers = function (layer) {
     l.parse();
 }
 Timeline.prototype.exportXml = function (xml) {
-    xml.begin('timeline');
+    xml.begin('timeline', {framecount: this.timeline.frameCount});
     each(this.layers, function (layer) {
         layer.exportXml(xml);
     }, this);
@@ -289,19 +310,22 @@ XML.prototype.inline = function (name, attrs) {
     for (var i = 0; i < this.intend; i++) {
         this.buffer += this.space;
     }
-    this.buffer += '<' + name;
-    if (attrs) {
-        for (var i in attrs) {
-            this.buffer += ' ' + i + '="' + attrs[i] + '"';
+
+    var buffer = this.buffer += '<' + name;
+    var args = Array.prototype.slice.call(arguments, 1);
+    console.log('args:' + args);
+    each(args, function (props) {
+        for (var i in props) {
+            buffer += ' ' + i + '="' + props[i] + '"';
         }
-    }
+    });
+
     this.buffer += ' />\n';
 }
 
 console.clear();
 var flash = new Flash(fl.getDocumentDOM().library);
-var exp = flash.createTimeline(fl.getDocumentDOM().getTimeline());
-exp.parse();
+flash.parse(fl.getDocumentDOM().getTimeline());
 flash.exportXml();
 
 console.log(fl.getDocumentDOM().timelines);
