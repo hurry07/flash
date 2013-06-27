@@ -1656,7 +1656,7 @@ Flash.prototype.loadLibrary = function (library) {
             var filename = this.genBitmapName();
             itemwrap.setContent(new BitmapItem(filename));
             item.exportToFile('file:///Users/jie/git/flash/pics/' + filename, 100);
-        } else {
+        } else if (item.itemType != 'folder') {
             console.log('not supported library item:' + item.itemType);
         }
     }, this);
@@ -1686,9 +1686,9 @@ Flash.prototype.exportXml = function () {
     this.saveXml(xml);
 }
 Flash.prototype.saveXml = function (xml) {
-    var URI = "file:///Users/jie/git/flash/text.txt";
+    var URI = 'file:///Users/jie/git/flash/text.xml';
     if (FLfile.write(URI, xml.buffer)) {
-        console.log("Wrote xxx to " + URI);
+        console.log('export to ' + URI + ' success');
     }
     /*
      if (FLfile.write(URI, "aaa", "append")) {
@@ -1780,8 +1780,9 @@ function Frame(frame) {
     this.frame = frame;
     this.duration = frame.duration;
     this.startFrame = frame.startFrame;
+    this.tweenType = frame.tweenType;
     this.element = frame.elements[0];
-    this.position = this.parsePosition(this.element);
+    this.position = this.parseFrame(this.element);
     this.instance = this.parseInstance(this.element);
     this.elementIndex = 0;
 }
@@ -1814,7 +1815,7 @@ function vec3FromVec2(v2) {
     v3[1] = v2[1];
     return v3;
 }
-Frame.prototype.parsePosition = function (element) {
+Frame.prototype.parseFrame = function (element) {
     var m = element.matrix;
     var m2d = mat2d.clone([m.a, m.b, m.c, m.d, m.tx, m.ty]);
 
@@ -1852,7 +1853,7 @@ Frame.prototype.exportXml = function (xml, onlyposition) {
     if (onlyposition) {
         xml.inline('position', this.position);
     } else {
-        xml.begin('frame', {drawable: this.elementIndex, start: this.startFrame, duration: this.duration});
+        xml.begin('frame', {drawable: this.elementIndex, start: this.startFrame, duration: this.duration, animation: this.tweenType   });
         xml.inline('position', this.position);
         xml.end();
     }
@@ -1925,9 +1926,9 @@ Layer.prototype.exportXml = function (xml, graphic) {
 Layer.prototype.exportLibrary = function (xml) {
     xml.begin('drawable');
     var flash = this.flash;
-    each(this.elements, function (element) {
+    each(this.elements, function (element, i) {
         var item = flash.findItem(element);
-        xml.inline('refer', {name: element, index: item.content.index});
+        xml.inline('refer', {name: element, index: item.content.index, id: i});
     });
     xml.end();
 }
@@ -2051,13 +2052,5 @@ console.clear();
 var flash = new Flash(fl.getDocumentDOM());
 flash.parse(fl.getDocumentDOM().getTimeline());
 flash.exportXml();
-
-console.log(fl.getDocumentDOM().timelines);
-
-//var xml = new XML();
-//xml.begin('a');
-//xml.begin('b');
-//xml.end();
-//xml.end();
 
 console.log('done...');

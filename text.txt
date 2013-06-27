@@ -1,4 +1,4 @@
-<flash>
+<flash width="800" height="480">
     <graphic path="imgs_00.png" index="0">
         <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
     </graphic>
@@ -129,100 +129,10 @@
     <graphic path="imgs_30.png" index="30">
         <position x="4" y="4" scale="1,1" center="0,0" rotation="0" />
     </graphic>
-    <graphic path="imgs_00.png" index="31">
+    <graphic path="imgs_04.png" index="31">
         <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
     </graphic>
-    <graphic path="imgs_01.png" index="32">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_02.png" index="33">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_03.png" index="34">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_04.png" index="35">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_05.png" index="36">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_06.png" index="37">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_07.png" index="38">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_08.png" index="39">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_09.png" index="40">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_10.png" index="41">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_11.png" index="42">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_12.png" index="43">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_13.png" index="44">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_14.png" index="45">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_15.png" index="46">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_16.png" index="47">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_17.png" index="48">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_18.png" index="49">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_19.png" index="50">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_20.png" index="51">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_21.png" index="52">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_22.png" index="53">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_23.png" index="54">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_24.png" index="55">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_25.png" index="56">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_26.png" index="57">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_27.png" index="58">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_28.png" index="59">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_29.png" index="60">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <graphic path="imgs_30.png" index="61">
-        <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
-    </graphic>
-    <timeline name="main" index="31" framecount="40">
+    <timeline name="main" index="32" framecount="40">
         <layer name="图层 1">
             <drawable>
             </drawable>
@@ -755,13 +665,13 @@
             </drawable>
             <frames>
                 <frame drawable="0" start="0" duration="40">
-                    <position x="343.9695709228516" y="343.9695709228516" scale="4.8839263916015625,1.629730224609375" center="33,19.5" rotation="0" />
+                    <position x="343.9690673828125" y="343.9690673828125" scale="4.8839111328125,1.629730224609375" center="33,19.5" rotation="0" />
                 </frame>
             </frames>
         </layer>
         <layer name="bg">
             <drawable>
-                <refer name="场景1-800.jpg" index="35" />
+                <refer name="场景1-800.jpg" index="31" />
             </drawable>
             <frames>
                 <frame drawable="0" start="0" duration="40">
