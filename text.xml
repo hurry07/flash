@@ -1,4 +1,4 @@
-<flash width="800" height="480">
+<flash width="800" height="480" rate="24">
     <graphic path="imgs_00.png" index="0">
         <position x="0" y="0" scale="1,1" center="0,0" rotation="0" />
     </graphic>
