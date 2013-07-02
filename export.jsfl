@@ -1619,6 +1619,15 @@ function each(array, fn, bind) {
         str += fn.call(bind, array[i], i) + '\n';
     }
 }
+function reverseEach(array, fn, bind) {
+    if (!bind) {
+        bind = this;
+    }
+    var str = '';
+    for (var i = array.length - 1; i >= 0; i--) {
+        str += fn.call(bind, array[i], i) + '\n';
+    }
+}
 
 function BitmapItem(path) {
     this.filename = path;
@@ -1629,16 +1638,26 @@ BitmapItem.prototype.exportXml = function (xml) {
     xml.end();
 }
 
-function Flash(document) {
+function Flash(document, dest, path, xmlfile, imgCounter) {
     this.timelines = [];
-    this.bitmapCount = 0;
     this.document = document;
+
+    this.resourcePath = path;
+    if (path.length == 0) {
+        this.destFolder = dest + path;
+    } else {
+        this.destFolder = dest + '/' + path;
+    }
+
+    this.xmlFile = xmlfile;
+    this.imgFolder = 'images';
+    this.imgCounter = imgCounter;
+
     this.loadLibrary(document.library);
 }
 Flash.prototype.loadLibrary = function (library) {
     var itemsmap = this.itemsmap = {};
     var items = this.items = [];
-    var bitmapCount = 0;
 
     each(library.items, function (item) {
         var itemwrap = new Item(item);
@@ -1655,26 +1674,28 @@ Flash.prototype.loadLibrary = function (library) {
         } else if (item.itemType == 'bitmap') {
             var filename = this.genBitmapName();
             itemwrap.setContent(new BitmapItem(filename));
-            item.exportToFile('file:///Users/jie/git/flash/pics/' + filename, 100);
+            item.exportToFile(this.getImgPath(filename), 100);
         } else if (item.itemType != 'folder') {
             console.log('not supported library item:' + item.itemType);
         }
     }, this);
 }
+Flash.prototype.getImgPath = function (name) {
+    return this.destFolder + '/' + this.imgFolder + '/' + name;
+}
+Flash.prototype.getFilePath = function (file) {
+    return this.destFolder + '/' + file;
+}
+Flash.prototype.getRelativePath = function (file) {
+    return this.resourcePath + '/' + file;
+}
 Flash.prototype.genBitmapName = function () {
-    var name = 'imgs_';
-    if (this.bitmapCount < 10) {
-        name += '0' + this.bitmapCount + '.png';
-    } else {
-        name += this.bitmapCount + '.png';
-    }
-    this.bitmapCount++;
-    return name;
+    return this.imgCounter.nextName();
 }
 Flash.prototype.exportXml = function () {
     var xml = new XML(0);
 
-    xml.begin('flash', {width: this.document.width, height: this.document.height});
+    xml.begin('flash', {width: this.document.width, height: this.document.height, framerate: this.document.frameRate, resourcePath: this.getRelativePath(this.imgFolder) });
     each(this.items, function (item) {
         if (item.isCounted()) {
             item.content.exportXml(xml);
@@ -1686,9 +1707,9 @@ Flash.prototype.exportXml = function () {
     this.saveXml(xml);
 }
 Flash.prototype.saveXml = function (xml) {
-    var URI = 'file:///Users/jie/git/flash/text.xml';
+    var URI = this.getFilePath(this.xmlFile + '.xml');
     if (FLfile.write(URI, xml.buffer)) {
-        console.log('export to ' + URI + ' success');
+        console.log('export:' + URI + ' success');
     }
     /*
      if (FLfile.write(URI, "aaa", "append")) {
@@ -1778,13 +1799,26 @@ Item.prototype.setIndex = function (index) {
  */
 function Frame(frame) {
     this.frame = frame;
-    this.duration = frame.duration;
-    this.startFrame = frame.startFrame;
-    this.tweenType = frame.tweenType;
+    this.parseRotate(frame);
     this.element = frame.elements[0];
     this.position = this.parseFrame(this.element);
     this.instance = this.parseInstance(this.element);
     this.elementIndex = 0;
+}
+Frame.prototype.parseRotate = function (frame) {
+    this.duration = frame.duration;
+    this.startFrame = frame.startFrame;
+    this.tweenType = frame.tweenType;
+
+    this.direction = 0;
+    var tweenType = frame.motionTweenRotate;
+    if (tweenType == 'clockwise') {
+        this.direction = 1;
+    } else if (tweenType == 'counter-clockwise') {
+        this.direction = -1;
+    }
+
+    this.cycles = frame.motionTweenRotateTimes;
 }
 Frame.prototype.parseInstance = function (element) {
     var instance;
@@ -1843,7 +1877,7 @@ Frame.prototype.parseFrame = function (element) {
 
     return {
         x: center[0],
-        y: center[0],
+        y: center[1],
         scale: [element.scaleX, element.scaleY].join(','),
         center: [p.x, p.y].join(','),
         rotation: getAngle(vx)
@@ -1853,7 +1887,12 @@ Frame.prototype.exportXml = function (xml, onlyposition) {
     if (onlyposition) {
         xml.inline('position', this.position);
     } else {
-        xml.begin('frame', {drawable: this.elementIndex, start: this.startFrame, duration: this.duration, animation: this.tweenType   });
+        var attrs = {drawable: this.elementIndex, start: this.startFrame, duration: this.duration, animation: this.tweenType, rotationDirection: this.direction, rotationCycles: this.cycles };
+        if(this.element.instanceType == 'symbol') {
+            attrs.alpha = this.element.colorAlphaPercent;
+            attrs.amount = this.element.colorAlphaAmount;
+        }
+        xml.begin('frame', attrs);
         xml.inline('position', this.position);
         xml.end();
     }
@@ -1984,7 +2023,7 @@ Timeline.prototype.parseLayers = function (layer) {
 Timeline.prototype.exportXml = function (xml) {
     if (!this.graphic) {
         xml.begin('timeline', {name: this.name, index: this.index, framecount: this.timeline.frameCount});
-        each(this.layers, function (layer) {
+        reverseEach(this.layers, function (layer) {
             layer.exportXml(xml);
         }, this);
         xml.end();
@@ -2047,10 +2086,11 @@ XML.prototype.inline = function (name, attrs) {
     this.buffer += buffer;
 }
 
-console.clear();
+function exportFla(dest, path, filename, imgCounter) {
+    var flash = new Flash(fl.getDocumentDOM(), dest, path, filename, imgCounter);
+    flash.parse(fl.getDocumentDOM().getTimeline());
+    flash.exportXml();
+}
 
-var flash = new Flash(fl.getDocumentDOM());
-flash.parse(fl.getDocumentDOM().getTimeline());
-flash.exportXml();
-
-console.log('done...');
+//exportFla('dragon', 'file:///Users/jie/git/flash/dragon', 'output.xml');
+//console.log('done...');
