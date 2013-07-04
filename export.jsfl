@@ -1749,6 +1749,9 @@ Flash.prototype.findItem = function (name) {
 function Symbol(item) {
     this.parse(item);
 }
+/**
+ * @param item symbol instance
+ */
 Symbol.prototype.parse = function (item) {
     this.library = item.libraryItem;
     switch (item.symbolType) {
@@ -1803,6 +1806,7 @@ function Frame(frame) {
     this.element = frame.elements[0];
     this.position = this.parseFrame(this.element);
     this.instance = this.parseInstance(this.element);
+    //console.log(this.element.elementType);// instance, shapeObj, tlfText, text, shape
     this.elementIndex = 0;
 }
 Frame.prototype.parseRotate = function (frame) {
@@ -1889,8 +1893,8 @@ Frame.prototype.exportXml = function (xml, onlyposition) {
     } else {
         var attrs = {drawable: this.elementIndex, start: this.startFrame, duration: this.duration, animation: this.tweenType, rotationDirection: this.direction, rotationCycles: this.cycles };
         if(this.element.instanceType == 'symbol') {
-            attrs.alpha = this.element.colorAlphaPercent;
-            attrs.amount = this.element.colorAlphaAmount;
+            attrs.alpha = this.element.colorAlphaPercent / 100;
+            //attrs.amount = this.element.colorAlphaAmount;
         }
         xml.begin('frame', attrs);
         xml.inline('position', this.position);
@@ -1945,6 +1949,8 @@ Layer.prototype.distinctElement = function (frame) {
     var lib = frame.instance.library;
     for (var i = 0, es = this.elements, len = es.length; i < len; i++) {
         if (lib.name == es[i]) {
+            var libItem = this.flash.findItem(lib.name);
+            //console.log('same item found:', libItem.type, lib.name, this.flash.resourcePath);
             frame.elementIndex = i;
             return;
         }
