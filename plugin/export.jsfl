@@ -1808,6 +1808,9 @@ function Frame(frame) {
     this.instance = this.parseInstance(this.element);
     //console.log(this.element.elementType);// instance, shapeObj, tlfText, text, shape
     this.elementIndex = 0;
+    if(this.element.elementType != 'instance') {
+        console.log('not supported yet');
+    }
 }
 Frame.prototype.parseRotate = function (frame) {
     this.duration = frame.duration;
@@ -1895,6 +1898,10 @@ Frame.prototype.exportXml = function (xml, onlyposition) {
         if(this.element.instanceType == 'symbol') {
             attrs.alpha = this.element.colorAlphaPercent / 100;
             //attrs.amount = this.element.colorAlphaAmount;
+            // movie clip may has a instance name
+            if(this.instance.type == 'moveclip' && this.element.name) {
+                attrs.name = this.element.name;
+            }
         }
         xml.begin('frame', attrs);
         xml.inline('position', this.position);
