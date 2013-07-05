@@ -25,7 +25,7 @@
 //    are made:
 //    a) Set Export for ActionScript to true
 //    b) Set Export in First Frame to true
-//    c) Set Base Class to mx.flash.UIMovieClip
+//    c) Set Base Class to mx.flash_cpp.UIMovieClip
 //    d) Set class name to match the symbol name
 //    e) Make sure class name is valid (no spaces, etc.)
 //

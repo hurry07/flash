@@ -58,7 +58,7 @@ BatchUtil.prototype.endwith = function (str, tail) {
     return false;
 }
 
-var slavepath = "file:///Users/jie/git/flash/export.jsfl";
-var batch = new BatchUtil('file:///Users/jie/Desktop/魔幻史诗FLASH_全_调亮/attack', 'file:///Users/jie/git/flash/export33');
-//var batch = new BatchUtil('file:///Users/jie/git/flash/test', 'file:///Users/jie/git/flash/export');
+var slavepath = "file:///Users/jie/git/flash_cpp/export.jsfl";
+var batch = new BatchUtil('file:///Users/jie/Desktop/魔幻史诗FLASH_全_调亮/attack', 'file:///Users/jie/git/flash_cpp/export33');
+//var batch = new BatchUtil('file:///Users/jie/git/flash_cpp/test', 'file:///Users/jie/git/flash_cpp/export');
 batch.execute();

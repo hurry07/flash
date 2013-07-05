@@ -343,7 +343,7 @@ MotionXMLExporter.prototype.getXML = function(useWhiteSpace, forActionScript, st
 	if (this.xml.length)
 	{
 		this.xml = ''
-			+ '<Motion duration="'+this.duration+'" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">'
+			+ '<Motion duration="'+this.duration+'" xmlns="fl.motion.*" xmlns:geom="flash_cpp.geom.*" xmlns:filters="flash_cpp.filters.*">'
 			+ this.sourceXML
 			+ this.xml
 			+ this.n

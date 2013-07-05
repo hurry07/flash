@@ -1695,7 +1695,7 @@ Flash.prototype.genBitmapName = function () {
 Flash.prototype.exportXml = function () {
     var xml = new XML(0);
 
-    xml.begin('flash', {width: this.document.width, height: this.document.height, framerate: this.document.frameRate, resourcePath: this.getRelativePath(this.imgFolder) });
+    xml.begin('flash_cpp', {width: this.document.width, height: this.document.height, framerate: this.document.frameRate, resourcePath: this.getRelativePath(this.imgFolder) });
     each(this.items, function (item) {
         if (item.isCounted()) {
             item.content.exportXml(xml);
@@ -1957,7 +1957,7 @@ Layer.prototype.distinctElement = function (frame) {
     for (var i = 0, es = this.elements, len = es.length; i < len; i++) {
         if (lib.name == es[i]) {
             var libItem = this.flash.findItem(lib.name);
-            //console.log('same item found:', libItem.type, lib.name, this.flash.resourcePath);
+            //console.log('same item found:', libItem.type, lib.name, this.flash_cpp.resourcePath);
             frame.elementIndex = i;
             return;
         }
@@ -2105,5 +2105,5 @@ function exportFla(dest, path, filename, imgCounter) {
     flash.exportXml();
 }
 
-//exportFla('dragon', 'file:///Users/jie/git/flash/dragon', 'output.xml');
+//exportFla('dragon', 'file:///Users/jie/git/flash_cpp/dragon', 'output.xml');
 //console.log('done...');
