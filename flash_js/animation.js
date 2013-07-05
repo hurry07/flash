@@ -27,8 +27,10 @@ function each(array, fn, bind) {
 
 function CreateAdapter() {
 }
-CreateAdapter.prototype.createSprite = function (path, size, aline) {
-    return 0;
+CreateAdapter.prototype.createSprite = function (div, imgpath) {
+    var img = document.createElement('img');
+    img.src = imgpath;
+    div.appendChild(img);
 }
 
 function FlashContext() {
@@ -112,6 +114,21 @@ Node.prototype.node = function () {
 }
 Node.prototype.addChild = function (node) {
     this.element.appendChild(node.element);
+}
+Node.prototype.removeChildren = function (node) {
+    var from = this.element.childNodes;
+    for (var i = 0, length = from.length; i < length; i++) {
+        this.element.removeChild(from[i]);
+    }
+}
+Node.prototype.setVisible = function (visible) {
+    this.visible = visible;
+}
+Node.prototype.appendChildren = function (node) {
+    var from = node.element.childNodes;
+    for (var i = 0, length = from.length; i < length; i++) {
+        this.element.appendChild(from[i]);
+    }
 }
 
 /**
@@ -219,7 +236,7 @@ Frame.prototype.interprate = function (percent, f1, f2, p, context) {
         p.translate(i(percent, p1.x, p2.x), i(percent, p1.y, p2.y));
     }
     if (f1.animationTip & this.TIP_SCALE) {
-        p.setScale(i(percent, p1.sx, p2.sx), i(percent, p1.sy, p2.sy));
+        p.scale(i(percent, p1.sx, p2.sx), i(percent, p1.sy, p2.sy));
     }
     if (f1.animationTip & this.TIP_ROTATE) {
         p.rotate(this.interprateRotate(percent, f1, f2));
@@ -434,8 +451,8 @@ function Graphic(flash) {
 _extends(Graphic, Symbol);
 Graphic.prototype.createSequence = function (adapter) {
     var g = new GraphicSequence(this);
-    var img = adapter.createSprite(this.path);// TODO
-    // TODO
+    var node = g.getNode();
+    adapter.createSprite(node.node(), this.flash.getImgPath(this.path));
     return g;
 }
 Graphic.prototype.initAttr = function (key, value) {
@@ -646,9 +663,8 @@ GraphicSequence.prototype.apply = function (context) {
 }
 
 function LayerNode(layer) {
-    Sequence.call();
+    Sequence.call(this);
     this.layer = layer;
-    this.node = new Node(document.createElement('div'));
     this.drawable = [];
 }
 _extends(LayerNode, Sequence);
@@ -693,7 +709,7 @@ LayerNode.prototype.updateTo = function (time) {
     this.currentFrame = this.layer.findStartFrame(time, this.currentFrame);
     this.currentTime = time;
 }
-LayerNode.prototype.LayerNode = function (context) {
+LayerNode.prototype.apply = function (context) {
     var node = this.node;
     var f = this.layer.getFrame(this.currentFrame);
 
@@ -722,8 +738,8 @@ LayerNode.prototype.LayerNode = function (context) {
 
         var child = this.drawable[f.drawable];
         child.apply(context);
-        node.removeChild();// TODO
-        node.addChild(child.getNode());
+        this.node.removeChildren();
+        this.node.addChild(child.getNode());
     } else {
         node.setVisible(false);
     }
@@ -766,6 +782,7 @@ AnimationSequence.prototype.apply = function (context) {
 AnimationSequence.prototype.addLayer = function (layer) {
     this.layers.push(layer);
     this.node.addChild(layer.getNode());
+    console.log(this.node.node());
 }
 
 function TimeLine(flash) {
