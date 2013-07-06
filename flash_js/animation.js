@@ -67,7 +67,7 @@ function Node(htmlelement) {
     this.r = '';
     this.s = '';
     this.t = '';
-    this.element.setAttribute('id', new Date().getTime());
+//    this.element.setAttribute('id', new Date().getTime());
 //    console.log(this.element);
 }
 Node.prototype.init = function (browser) {
@@ -272,7 +272,7 @@ Frame.prototype.interprate = function (percent, f1, f2, p) {
     p.alpha(i(percent, f1.alpha, f2.alpha));
 }
 Frame.prototype.interprateRotate = function (percent, f1, f2) {
-    var gap = f2.position.rotation - f1.position.rotation;
+    var gap = f2.position.r - f1.position.r;
     if (f1.rotationDirection == 0) {
         if (gap < -180) {
             gap += 360;
@@ -309,7 +309,7 @@ Frame.prototype.initAnimaTip = function (previous, current) {
     if (p1.cx != p2.cx || p1.cy != p2.cy) {
         previous.animationTip |= _f.TIP_TRANSLATE_CENTER;
     }
-    if (p1.rotation != p2.rotation || previous.rotationCycles != 0) {
+    if (p1.r != p2.r || previous.rotationCycles != 0) {
         previous.animationTip |= _f.TIP_ROTATE;
     }
 }
@@ -482,6 +482,7 @@ Graphic.prototype.createSequence = function (adapter) {
     var g = new GraphicSequence(this);
     var node = g.getNode();
     adapter.createSprite(node.node(), this.flash.getImgPath(this.path));
+    node.apply(this.position);
     return g;
 }
 Graphic.prototype.initAttr = function (key, value) {
