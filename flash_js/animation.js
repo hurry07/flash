@@ -24,6 +24,18 @@ function each(array, fn, bind) {
         str += fn.call(bind, array[i], i) + '\n';
     }
 }
+function getBrowser() {
+    var str = navigator.userAgent.toLowerCase();
+    if (/firefox/.test(str)) {
+        return 'mozilla';
+    } else if (/webkit/.test(str)) {
+        return 'webkit';
+    } else if (/opera/.test(str)) {
+        return 'opera';
+    } else if (/msie/.test(str)) {
+        return 'msie';
+    }
+}
 
 function CreateAdapter() {
 }
@@ -70,9 +82,9 @@ function Node(htmlelement) {
 //    this.element.setAttribute('id', new Date().getTime());
 //    console.log(this.element);
 }
-Node.prototype.init = function (browser) {
-    switch (browser) {
-        case 'ff':// firefox
+Node.prototype.init = function () {
+    switch (getBrowser()) {
+        case 'mozilla':// firefox
             this.transProp = 'MozTransform';
             this.originProp = 'MozTransformOrigin';
             break;
@@ -80,7 +92,7 @@ Node.prototype.init = function (browser) {
             this.transProp = 'webkitTransform';
             this.originProp = 'webkitTransformOrigin';
             break;
-        case 'ie':
+        case 'msie':
             this.transProp = 'msTransform';
             this.originProp = 'msTransformOrigin';
             break;
@@ -88,6 +100,8 @@ Node.prototype.init = function (browser) {
             this.transProp = 'OTransform';
             this.originProp = 'OTransformOrigin';
             break;
+        default:
+            console.log('not support browser');
     }
 }
 Node.prototype.center = function (x, y) {
@@ -126,7 +140,7 @@ Node.prototype.removeChildren = function () {
 }
 Node.prototype.setVisible = function (visible) {
     this.visible = visible;
-    if(visible) {
+    if (visible) {
         this.element.style.display = 'block';
     } else {
         this.element.style.display = 'none';

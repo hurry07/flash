@@ -16,11 +16,10 @@
     </style>
     <div id="root" class="wlby_movie"></div>
     <script type="text/javascript">
-        Node.prototype.init('webkit');
-//        Node.prototype.init('ff');
+        Node.prototype.init();
 
         $.ajax({
-            url: 'dragon/boss_near_att.xml',
+            url: 'dragon/boss_near_att.xml', // you can also try 'attack/fanji.xml'
             dataType: 'text',
             success: function (text) {
                 var loader = new FlashLoader();
