@@ -40,7 +40,7 @@ BatchUtil.prototype.searchFla = function (path, task) {
             if (this.endwith(fileList[i], '.fla')) {
                 fl.outputPanel.trace(childpath + ' = ' + fileList[i].slice(0, -4));
                 fl.openDocument(childpath);
-                fl.runScript(slavepath, "exportFla", this.dest, path, fileList[i].slice(0, -4), images);
+                fl.runScript(fl.configURI + 'Javascript/export_action.jsfl', "exportFla", this.dest, path, fileList[i].slice(0, -4), images);
                 fl.closeDocument(fl.getDocumentDOM());
                 //this.fastbreak = true;
             }
@@ -58,7 +58,8 @@ BatchUtil.prototype.endwith = function (str, tail) {
     return false;
 }
 
-var slavepath = "file:///Users/jie/git/flash_cpp/export.jsfl";
-var batch = new BatchUtil('file:///Users/jie/Desktop/魔幻史诗FLASH_全_调亮/attack', 'file:///Users/jie/git/flash_cpp/export33');
-//var batch = new BatchUtil('file:///Users/jie/git/flash_cpp/test', 'file:///Users/jie/git/flash_cpp/export');
+var sourceFolder = fl.browseForFolderURL('select', 'Please select Flas folder.');
+var destFolder = fl.browseForFolderURL('select', 'select a release folder');
+
+var batch = new BatchUtil(sourceFolder, destFolder);
 batch.execute();

@@ -1681,12 +1681,21 @@ Flash.prototype.loadLibrary = function (library) {
     }, this);
 }
 Flash.prototype.getImgPath = function (name) {
+    if(this.destFolder.length == 0) {
+        return this.imgFolder + '/' + name;
+    }
     return this.destFolder + '/' + this.imgFolder + '/' + name;
 }
 Flash.prototype.getFilePath = function (file) {
+    if(this.destFolder.length == 0) {
+        return file;
+    }
     return this.destFolder + '/' + file;
 }
 Flash.prototype.getRelativePath = function (file) {
+    if(this.resourcePath.length == 0) {
+        return file;
+    }
     return this.resourcePath + '/' + file;
 }
 Flash.prototype.genBitmapName = function () {
