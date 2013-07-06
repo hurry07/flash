@@ -1704,7 +1704,7 @@ Flash.prototype.genBitmapName = function () {
 Flash.prototype.exportXml = function () {
     var xml = new XML(0);
 
-    xml.begin('flash_cpp', {width: this.document.width, height: this.document.height, framerate: this.document.frameRate, resourcePath: this.getRelativePath(this.imgFolder) });
+    xml.begin('flash', {width: this.document.width, height: this.document.height, framerate: this.document.frameRate, resourcePath: this.getRelativePath(this.imgFolder) });
     each(this.items, function (item) {
         if (item.isCounted()) {
             item.content.exportXml(xml);
@@ -2108,6 +2108,12 @@ XML.prototype.inline = function (name, attrs) {
     this.buffer += buffer;
 }
 
+/**
+ * @param dest dest folder, file:// uir
+ * @param path subfolder under dest
+ * @param filename current flash document name, will used as the export xml name
+ * @param imgCounter use to count all images
+ */
 function exportFla(dest, path, filename, imgCounter) {
     var flash = new Flash(fl.getDocumentDOM(), dest, path, filename, imgCounter);
     flash.parse(fl.getDocumentDOM().getTimeline());
