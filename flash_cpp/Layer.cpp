@@ -230,17 +230,17 @@ void LayerNode::apply(FlashContext* context) {
     }
 	if (f->isVisiable()) {
 		node->setVisible(true);
+		Position p = *(f->position);
 
 		if (f->animationType != Frame::ANIMATION_MOTION) {
-			applyPosition(*(f->position));
+			applyPosition(p);
             context->multipAlpha(f->alpha);
 		} else {
 			Frame* next = layer->getFrame(currentFrame + 1);
 			if (next == 0) {
-				applyPosition(*(f->position));
+				applyPosition(p);
                 context->multipAlpha(f->alpha);
 			} else {
-        		Position p;
 				float time = currentTime - f->start;
                 //context->setAlpha(1);
 				Frame::interprate(time / f->duration, f, next, p, context);
