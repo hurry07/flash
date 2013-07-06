@@ -67,6 +67,8 @@ function Node(htmlelement) {
     this.r = '';
     this.s = '';
     this.t = '';
+    this.element.setAttribute('id', new Date().getTime());
+//    console.log(this.element);
 }
 Node.prototype.init = function (browser) {
     switch (browser) {
@@ -89,25 +91,26 @@ Node.prototype.init = function (browser) {
     }
 }
 Node.prototype.center = function (x, y) {
-    this.c = [x, 'px ', y, 'px'].join();
+    this.c = [x, 'px ', y, 'px'].join('');
 }
 Node.prototype.rotate = function (r) {
-    this.r = ['rotate(', r, 'deg)'].join();
+    this.r = ['rotate(', r, 'deg)'].join('');
 }
 Node.prototype.scale = function (sx, sy) {
-    this.s = ['scale(', sx, sy, ')'].join();
+    this.s = ['scale(', sx, ',', sy, ')'].join('');
 }
 Node.prototype.translate = function (tx, ty) {
-    this.t = ['translate(', tx, 'px ', ty, 'px)'].join();
+    this.t = ['translate(', tx, 'px,', ty, 'px)'].join('');
 }
 Node.prototype.apply = function (position) {
     this.center(position.cx, position.cy);
     this.scale(position.sx, position.sy);
     this.rotate(position.r);
-    this.translate(position.x, position.y);
+    this.translate(position.x - position.cx, position.y - position.cy);
 
     this.element.style[this.originProp] = this.c;
-    this.element.style[this.transProp] = [this.r, this.s , this.t ].join();
+    this.element.style[this.transProp] = [this.t, this.r, this.s].join(' ');
+    this.element.style['opacity'] = position.a;
 }
 Node.prototype.node = function () {
     return this.element;
@@ -115,7 +118,7 @@ Node.prototype.node = function () {
 Node.prototype.addChild = function (node) {
     this.element.appendChild(node.element);
 }
-Node.prototype.removeChildren = function (node) {
+Node.prototype.removeChildren = function () {
     var from = this.element.childNodes;
     for (var i = 0, length = from.length; i < length; i++) {
         this.element.removeChild(from[i]);
@@ -123,6 +126,11 @@ Node.prototype.removeChildren = function (node) {
 }
 Node.prototype.setVisible = function (visible) {
     this.visible = visible;
+    if(visible) {
+        this.element.style.display = 'block';
+    } else {
+        this.element.style.display = 'none';
+    }
 }
 Node.prototype.appendChildren = function (node) {
     var from = node.element.childNodes;
@@ -140,8 +148,22 @@ function Position() {
     this.sx = this.sy = 1;
     this.cx = this.cy = 0;
     this.r = 0;
+    this.a = 1;
 }
 _extends(Position, XMLInteract);
+Position.prototype.init = function (p) {
+    this.x = p.x;
+    this.y = p.y;
+    this.cx = p.cx;
+    this.cy = p.cy;
+    this.sx = p.sx;
+    this.sy = p.sy;
+    this.r = p.r;
+    this.a = p.a;
+}
+Position.prototype.toString = function () {
+    return ['P:{', this.x, this.y, this.cx, this.cy , this.sx, this.sy, this.r, this.a, '}'].join(' ');
+}
 Position.prototype.center = function (cx, cy) {
     this.cx = cx;
     this.cy = cy;
@@ -157,6 +179,9 @@ Position.prototype.scale = function (sx, sy) {
 Position.prototype.rotate = function (r) {
     this.r = r;
 }
+Position.prototype.alpha = function (a) {
+    this.a = a;
+}
 Position.prototype.initAttr = function (key, value) {
     switch (key) {
         case 'x':
@@ -167,13 +192,13 @@ Position.prototype.initAttr = function (key, value) {
             break;
         case 'scale':
             var arr = value.split(',');
-            this.sx = arr[0];
-            this.sy = arr[1];
+            this.sx = parseFloat(arr[0]);
+            this.sy = parseFloat(arr[1]);
             break;
         case 'center':
             var arr = value.split(',');
-            this.cx = arr[0];
-            this.cy = arr[1];
+            this.cx = parseFloat(arr[0]);
+            this.cy = parseFloat(arr[1]);
             break;
         case 'rotation':
             this.r = parseFloat(value) / Math.PI * 180;
@@ -228,7 +253,7 @@ Frame.prototype.interpratef = function (p, f1, f2) {
  * @param p output object
  * @param context
  */
-Frame.prototype.interprate = function (percent, f1, f2, p, context) {
+Frame.prototype.interprate = function (percent, f1, f2, p) {
     var p1 = f1.position;
     var p2 = f2.position;
     var i = this.interpratef;
@@ -244,7 +269,7 @@ Frame.prototype.interprate = function (percent, f1, f2, p, context) {
     if (f1.animationTip & this.TIP_TRANSLATE_CENTER) {
         p.center(i(percent, p1.cx, p2.cx), i(percent, p1.cy, p2.cy));
     }
-    context.mulAlpha(i(percent, f1.alpha, f2.alpha));
+    p.alpha(i(percent, f1.alpha, f2.alpha));
 }
 Frame.prototype.interprateRotate = function (percent, f1, f2) {
     var gap = f2.position.rotation - f1.position.rotation;
@@ -317,6 +342,9 @@ Frame.prototype.startParse = function (name) {
     }
     return null;
 }
+Frame.prototype.endParse = function (name) {
+    this.position.alpha(this.alpha);
+}
 Frame.prototype.isVisiable = function () {
     return this.drawable >= 0;
 }
@@ -342,6 +370,7 @@ Flash.prototype.getImgPath = function (name) {
 }
 Flash.prototype.createInstance = function (adapter) {
     var ins = new FlashInstance(this, this.createMain(adapter));
+    ins.updateToFrame(0);
     return ins;
 }
 Flash.prototype.createSequence = function (index, adapter) {
@@ -500,7 +529,7 @@ Layer.prototype.findStartFrame = function (time, tip) {
     }
     // >= end
     if (time >= frames[ frames.length - 1].getEnd()) {
-        return  frames.size() - 1;
+        return frames.length - 1;
     }
 
     var start = 0;
@@ -515,7 +544,7 @@ Layer.prototype.findStartFrame = function (time, tip) {
 
     var c = 0;
     while (end - start > 1) {
-        var mid = (start + end) / 2;
+        var mid = Math.floor((start + end) / 2);
         c = frames[mid].start - time;
         if (c > 0) {
             end = mid;
@@ -640,10 +669,6 @@ Sequence.prototype.getFrameCount = function () {
     return this.framecount;
 }
 Sequence.prototype.applyPosition = function (p) {
-    if (!this.visiable) {
-        this.node.style.display = 'node';
-        return;
-    }
     this.node.apply(p);
 }
 Sequence.prototype.update = function (dt) {
@@ -664,6 +689,8 @@ GraphicSequence.prototype.apply = function (context) {
 
 function LayerNode(layer) {
     Sequence.call(this);
+    this.framecount = layer.framecount;
+    this.currentFrame = 0;
     this.layer = layer;
     this.drawable = [];
 }
@@ -718,20 +745,18 @@ LayerNode.prototype.apply = function (context) {
     }
     if (f.isVisiable()) {
         node.setVisible(true);
-        var p = f.position;
 
         if (f.animationType != Frame.prototype.ANIMATION_MOTION) {
-            this.applyPosition(p);
-            context.alpha(f.alpha);
+            this.applyPosition(f.position);
         } else {
             var next = this.layer.getFrame(this.currentFrame + 1);
             if (next == 0) {
-                this.applyPosition(p);
-                context.alpha(f.alpha);
+                this.applyPosition(f.position);
             } else {
                 var time = this.currentTime - f.start;
-                //context.setAlpha(1);
-                Frame.prototype.interprate(time / f.duration, f, next, p, context);
+                var p = new Position();
+                p.init(f.position);
+                Frame.prototype.interprate(time / f.duration, f, next, p);
                 this.applyPosition(p);
             }
         }
@@ -766,6 +791,8 @@ AnimationSequence.prototype.update = function (step) {
     for (var itor = 0, coll = this.layers, size = coll.length; itor < size; itor++) {
         coll[itor].update(cycle, this.currentTime, step, end);
     }
+
+    this.currentTime = end;
 }
 AnimationSequence.prototype.updateTo = function (dt) {
     for (var itor = 0, coll = this.layers, size = coll.length; itor < size; itor++) {
@@ -782,7 +809,7 @@ AnimationSequence.prototype.apply = function (context) {
 AnimationSequence.prototype.addLayer = function (layer) {
     this.layers.push(layer);
     this.node.addChild(layer.getNode());
-    console.log(this.node.node());
+//    console.log(this.node.node());
 }
 
 function TimeLine(flash) {
