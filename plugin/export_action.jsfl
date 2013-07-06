@@ -1966,7 +1966,7 @@ Layer.prototype.distinctElement = function (frame) {
     for (var i = 0, es = this.elements, len = es.length; i < len; i++) {
         if (lib.name == es[i]) {
             var libItem = this.flash.findItem(lib.name);
-            //console.log('same item found:', libItem.type, lib.name, this.flash_cpp.resourcePath);
+            //console.log('same item found:', libItem.type, lib.name, this.flash_cocos2dx.resourcePath);
             frame.elementIndex = i;
             return;
         }
@@ -2120,5 +2120,5 @@ function exportFla(dest, path, filename, imgCounter) {
     flash.exportXml();
 }
 
-//exportFla('dragon', 'file:///Users/jie/git/flash_cpp/dragon', 'output.xml');
+//exportFla('dragon', 'file:///Users/jie/git/flash_cocos2dx/dragon', 'output.xml');
 //console.log('done...');
