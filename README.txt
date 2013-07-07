@@ -40,8 +40,8 @@ for html5:
 for cocos2dx:
     FlashManager* manager = new FlashManager();
     manager->load("dragon", "dragon/boss_near_att.xml");
-	FlashInstance* instance = manager->create("dragon");
-	addChild(instance->getNode());
-	instance->update(0);
+    FlashInstance* instance = manager->create("dragon");
+    addChild(instance->getNode());
+    instance->update(0);
 
 Any suggestion is appreciated.
