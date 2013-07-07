@@ -1,16 +1,18 @@
 Hi,
 
-I am an developer of android/html/java, and I am working on flash exporting recently, here is part of my job.
-It is a demo for transform a flash animation to an html5 page. It works fine on my Mac pro + flash cs6
+I am an developer of android/html/java/cpp, and I am working on flash exporting recently, here is part of my job.
+It is a demo for transform a flash animation to an html5 page. It works fine on my Mac pro + flash cs6 + Chrome
 
 It is a prototype project, only support flash animation, and here is an implement of cocos2dx(for game developing)
 and an html5 port for web developing.
 My next planning lies on your feed back, but I already have some plan:
-1 supported shapes,
-2 supported text
-3 supported button and other customer UI component.
+1 documents
+2 supported shapes,
+3 supported text
+4 supported button and other customer UI component.
+and I am planning to put it on some donating web sites for funding, I'd really like to take it as a full time job.
 
-Following these steps:
+Following these steps to run your first example:
 1 Add the 'actionExport.zxp' plugin to your flash cs5(at least)
 2 open a flash animation, and choose Command->Export Current
 3 select a output folder, for example DEST_FOLDER.
@@ -42,3 +44,4 @@ for cocos2dx:
 	addChild(instance->getNode());
 	instance->update(0);
 
+Any suggestion is appreciated.
