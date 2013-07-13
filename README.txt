@@ -1,5 +1,7 @@
 Hi,
 
+This is an Flash to Html5 or Cocos2d-x conver application.
+
 I am an developer of android/html/java/cpp, and I am working on flash exporting recently, here is part of my job.
 It is a demo for transform a flash animation to an html5 page. It works fine on my Mac pro + flash cs6 + Chrome
 
