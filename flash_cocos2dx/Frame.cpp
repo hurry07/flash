@@ -49,12 +49,14 @@ void Frame::interprate(float percent, Frame* f1, Frame* f2, Position& p, FlashCo
 }
 float Frame::interprateRotate(float percent, Frame* f1, Frame* f2) {
     float gap = f2->position->rotation - f1->position->rotation;
+    int flag = 1;
     if(f1->rotationDirection == 0) {
         if(gap < -180) {
             gap += 360;
         } else if(gap > 180) {
             gap -= 360;
         }
+        flag = gap < 0 ? -1 : 1;
     } else if(f1->rotationDirection == 1) {
         if(gap < 0) {
             gap += 360;
@@ -63,8 +65,9 @@ float Frame::interprateRotate(float percent, Frame* f1, Frame* f2) {
         if(gap > 0) {
             gap -= 360;
         }
+        flag = -1;
     }
-    return f1->position->rotation + (f1->rotationCycles * 360 + gap) * percent;
+    return f1->position->rotation + (f1->rotationCycles * 360 * flag + gap) * percent;
 }
 int Frame::getEnd() {
 	return start + duration;
